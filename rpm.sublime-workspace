@@ -1,0 +1,1937 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"folder",
+				"folder_exclude_patterns"
+			],
+			[
+				"form",
+				"form-control"
+			],
+			[
+				"ve",
+				"venue-address-line-2"
+			],
+			[
+				"v",
+				"venue-address-line-1"
+			],
+			[
+				"child",
+				"child-name"
+			],
+			[
+				"form-",
+				"form-group"
+			],
+			[
+				"p",
+				"p"
+			],
+			[
+				"col-",
+				"col-xs-12"
+			],
+			[
+				"pro",
+				"production"
+			],
+			[
+				"back",
+				"background-repeat"
+			],
+			[
+				"ac",
+				"accordion"
+			],
+			[
+				"acc",
+				"accordionClosed"
+			],
+			[
+				"all",
+				"allClickers"
+			],
+			[
+				"al",
+				"allClickers"
+			],
+			[
+				"close",
+				"closeAccordionBlocks"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"meta",
+				"metaUri"
+			],
+			[
+				"sub",
+				"subNavText"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"accor",
+				"accordionItem"
+			],
+			[
+				"content",
+				"contentWrapper"
+			],
+			[
+				"aja",
+				"ajaxServiceUrl"
+			],
+			[
+				"data",
+				"dataset"
+			],
+			[
+				"DWH",
+				"DWHmapConfig"
+			],
+			[
+				"set",
+				"setMap"
+			],
+			[
+				"mort",
+				"mortgageCalculatorTracking"
+			],
+			[
+				"pay",
+				"paymentsModel"
+			],
+			[
+				"depo",
+				"depositSliderView"
+			],
+			[
+				"he",
+				"helpToBuyContext"
+			],
+			[
+				"term",
+				"termSliderView"
+			],
+			[
+				"inters",
+				"interestSliderView"
+			],
+			[
+				"mortga",
+				"mortgage"
+			],
+			[
+				"cal",
+				"calculatorModel"
+			],
+			[
+				"Mo",
+				"MortgageCalculatorModel"
+			],
+			[
+				"mortgage",
+				"mortgage"
+			],
+			[
+				"HTB",
+				"HTBhousePricePercent"
+			],
+			[
+				"no",
+				"noMinify"
+			],
+			[
+				"value",
+				"value"
+			],
+			[
+				"search",
+				"searchReferences"
+			],
+			[
+				"Mor",
+				"MortgageCalculatorView"
+			],
+			[
+				"Mortgage",
+				"MortgageCalculatorResultsView"
+			],
+			[
+				"ht",
+				"htbTotal"
+			],
+			[
+				"month",
+				"monthlyPayment"
+			],
+			[
+				"sb",
+				"subscribe"
+			],
+			[
+				"mortg",
+				"mortgagePercent"
+			],
+			[
+				"HTBlo",
+				"HTBloanPercent"
+			],
+			[
+				"mon",
+				"monthlyPayment"
+			],
+			[
+				"int",
+				"interestSliderView"
+			],
+			[
+				"min",
+				"minLoanValuePercent"
+			],
+			[
+				"PM",
+				"PMTminDeposit"
+			],
+			[
+				"update",
+				"updateSliderValues"
+			],
+			[
+				"PMT",
+				"PMTminLimit"
+			],
+			[
+				"max",
+				"maxDeposit"
+			],
+			[
+				"create",
+				"createSlider"
+			],
+			[
+				"default",
+				"defaultValue"
+			],
+			[
+				"depos",
+				"depositSlider"
+			],
+			[
+				"mode",
+				"Model"
+			],
+			[
+				"local",
+				"localBasePath"
+			],
+			[
+				"buil",
+				"buildList"
+			],
+			[
+				"accord",
+				"accordionClosed"
+			],
+			[
+				"for",
+				"formField"
+			],
+			[
+				"in",
+				"investorsToggle"
+			],
+			[
+				"border",
+				"border-bottom-right-radius"
+			],
+			[
+				"new",
+				"newItems"
+			],
+			[
+				"D",
+				"DWHmapConfig"
+			],
+			[
+				"slider",
+				"sliderMin"
+			],
+			[
+				"m",
+				"multiple"
+			],
+			[
+				"sli",
+				"sliderMin"
+			],
+			[
+				"dep",
+				"deposit"
+			],
+			[
+				"morg",
+				"mortgageCalculatorCTA"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"mortgageV",
+				"mortgageValueHTB"
+			],
+			[
+				"deposit",
+				"depositPercent"
+			],
+			[
+				"to",
+				"toCurrency"
+			],
+			[
+				"model",
+				"model"
+			],
+			[
+				"plot",
+				"plotPrice"
+			],
+			[
+				"refres",
+				"refreshView"
+			],
+			[
+				"mor",
+				"mortgageCalculatorModelPlot"
+			],
+			[
+				"Mort",
+				"mortgageCalculator"
+			],
+			[
+				"mortgageCalc",
+				"mortgageCalculatorController"
+			],
+			[
+				"MortgageCalc",
+				"MortgageCalculatorController"
+			],
+			[
+				"fixed",
+				"fixedPrice"
+			],
+			[
+				"Mortg",
+				"MortgageCalculatorControllerPlot"
+			],
+			[
+				"MOr",
+				"MortgageCalculatorPlotView"
+			],
+			[
+				"cac",
+				"cachedReflector"
+			],
+			[
+				"va",
+				"validates"
+			],
+			[
+				"Mot",
+				"MortgageCalculator"
+			],
+			[
+				"calcul",
+				"calculatorContainer"
+			],
+			[
+				"calc",
+				"calculatorContainer"
+			],
+			[
+				"homePage",
+				"homepageFeature"
+			],
+			[
+				"tot",
+				"totalWithout"
+			],
+			[
+				"refresh",
+				"refreshResults"
+			],
+			[
+				"re",
+				"refreshView"
+			],
+			[
+				"ref",
+				"refreshResults"
+			],
+			[
+				"mortgag",
+				"mortgageTerm"
+			],
+			[
+				"interest",
+				"interestRate"
+			],
+			[
+				"MO",
+				"MortgageCalculatorController"
+			],
+			[
+				"home",
+				"homeSub"
+			],
+			[
+				"expan",
+				"expanderWrap"
+			],
+			[
+				"border-ra",
+				"border-radius-top-right"
+			],
+			[
+				"ca",
+				"calculatorContainer"
+			],
+			[
+				"has",
+				"hasIconGlyph"
+			],
+			[
+				"loca",
+				"locationSearchErrorText"
+			],
+			[
+				"refre",
+				"refreshView"
+			],
+			[
+				"se",
+				"selector"
+			],
+			[
+				"fo",
+				"format"
+			],
+			[
+				"UI",
+				"UIObject"
+			],
+			[
+				"morgg",
+				"mortgageCalculator"
+			],
+			[
+				"str",
+				"stripOutPunctuation"
+			],
+			[
+				"st",
+				"strict"
+			],
+			[
+				"prot",
+				"prototype"
+			],
+			[
+				"user",
+				"userDeposit"
+			],
+			[
+				"formF",
+				"formFieldGeneric"
+			],
+			[
+				"glba",
+				"globalSearch"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"ilin",
+				"inline"
+			],
+			[
+				"c",
+				"calculatorContainer"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"mo",
+				"monthlyRepaymentContainer"
+			],
+			[
+				"inlie",
+				"inline"
+			],
+			[
+				"su",
+				"subscribe"
+			],
+			[
+				"trimm",
+				"trimmedPercent"
+			],
+			[
+				"suf",
+				"suffixYears"
+			],
+			[
+				"cur",
+				"currency"
+			],
+			[
+				"fixe",
+				"fixedPrice"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 227.0,
+		"selected_items":
+		[
+			[
+				"svn com",
+				"SVN: Commit…"
+			],
+			[
+				"svn u",
+				"SVN: Update"
+			],
+			[
+				"svn rever",
+				"SVN: Revert, Interactive…"
+			],
+			[
+				"svn revert",
+				"SVN: Revert, Interactive…"
+			],
+			[
+				"svnc om",
+				"SVN: Commit…"
+			],
+			[
+				"svn c",
+				"SVN: Commit…"
+			],
+			[
+				"svn st",
+				"SVN: Status"
+			],
+			[
+				"svn inf",
+				"SVN: Info"
+			],
+			[
+				"svn del",
+				"SVN: Delete, Interactive…"
+			],
+			[
+				"svn ",
+				"SVN: Commit…"
+			],
+			[
+				"set syntax ht",
+				"Set Syntax: HTML (ASP)"
+			],
+			[
+				"set syntax java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"svn copm",
+				"SVN: Show Applicable Working Copy Commands"
+			],
+			[
+				"svn co",
+				"SVN: Commit…"
+			],
+			[
+				"packin",
+				"Package Control: Install Package"
+			],
+			[
+				"set syntax",
+				"Set Syntax: YAML"
+			],
+			[
+				"svn",
+				"Preferences: SVN Settings"
+			],
+			[
+				"set syntax ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set syntax html",
+				"Set Syntax: HTML (ASP)"
+			],
+			[
+				"svn revr",
+				"SVN: (File) Revert"
+			],
+			[
+				"set syntax css",
+				"Set Syntax: CSS"
+			],
+			[
+				"set syntax jac",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"snv st",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"svn res",
+				"SVN: (File) Resolve, Interactive…"
+			],
+			[
+				"snv u",
+				"Snippet: Object Value JS"
+			],
+			[
+				"svn y",
+				"SVN: (File) Copy"
+			],
+			[
+				"set syntax cs",
+				"Set Syntax: CSS"
+			],
+			[
+				"SVN COM",
+				"SVN: Commit…"
+			],
+			[
+				"set synt ht",
+				"Set Syntax: HTML (ASP)"
+			],
+			[
+				"svn i",
+				"SVN: Info"
+			],
+			[
+				"svnc o",
+				"SVN: Commit…"
+			],
+			[
+				"set syntax asp",
+				"Set Syntax: HTML (ASP)"
+			],
+			[
+				"lint",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"sv com",
+				"SVN: Commit…"
+			],
+			[
+				"svn cm",
+				"SVN: Commit…"
+			],
+			[
+				"svn up",
+				"SVN: Update"
+			],
+			[
+				"set syntax html ",
+				"Set Syntax: HTML (ASP)"
+			],
+			[
+				"set synt html",
+				"Set Syntax: HTML (ASP)"
+			],
+			[
+				"set syn ht",
+				"Set Syntax: HTML (Tcl)"
+			],
+			[
+				"set syn as",
+				"Set Syntax: ASP"
+			],
+			[
+				"SVN C",
+				"SVN: Commit…"
+			],
+			[
+				"SVN U",
+				"SVN: Update"
+			],
+			[
+				"svn resol",
+				"SVN: (File) Resolve, Interactive…"
+			],
+			[
+				"svnc",
+				"SVN: Commit…"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"syn js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"set syn",
+				"Set Syntax: JSON"
+			],
+			[
+				"syn json",
+				"Set Syntax: JSON"
+			],
+			[
+				"svn rev",
+				"SVN: Revert, Interactive…"
+			],
+			[
+				"svn igno",
+				"SVN: (Folder) Ignore"
+			],
+			[
+				"svn ignor",
+				"SVN: (Folder) Ignore"
+			],
+			[
+				"synt mar",
+				"Set Syntax: Markdown"
+			],
+			[
+				"svn com ",
+				"SVN: Commit…"
+			],
+			[
+				"svn om",
+				"SVN: (Folder) Move…"
+			],
+			[
+				"svn scom",
+				"SVN: Show Applicable File Commands"
+			],
+			[
+				"svnu",
+				"SVN: Update"
+			],
+			[
+				"svn erv",
+				"SVN: (File) Revert"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"svn mer",
+				"SVN: Merge…"
+			],
+			[
+				"svn re",
+				"SVN: Relocate…"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"svn stat",
+				"SVN: Status"
+			],
+			[
+				"svnst",
+				"SVN: Status"
+			],
+			[
+				"svncom",
+				"SVN: Commit…"
+			],
+			[
+				"svn log",
+				"SVN: (File) Log"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				" svn com",
+				"SVN: Commit…"
+			],
+			[
+				"ind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"in",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"dent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"den",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"svn rv",
+				"SVN: Revert, Interactive…"
+			],
+			[
+				"sv up",
+				"SVN: Update"
+			],
+			[
+				"svn uo",
+				"SVN: (File) Unignore"
+			],
+			[
+				"sv",
+				"SVN: Commit…"
+			],
+			[
+				" svn s",
+				"SVN: Status"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"pacl",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				" scn com",
+				"SVN: Show Applicable Working Copy Commands"
+			],
+			[
+				"svn sta",
+				"SVN: Status"
+			],
+			[
+				"SVN UP",
+				"SVN: Update"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 503.0
+	},
+	"console":
+	{
+		"height": 153.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/aaron/Sites/funtime/Gruntfile.js",
+		"/home/aaron/Sites/funtime/src/assets/bootstrap.css",
+		"/home/aaron/Sites/funtime/.gitignore",
+		"/home/aaron/Sites/funtime/funtime.sublime-project",
+		"/home/aaron/Sites/funtime/src/assets/bootstrap.min.css",
+		"/home/aaron/Sites/funtime/src/pages/components/head.shtml",
+		"/home/aaron/Sites/funtime/src/js/index.js",
+		"/home/aaron/Sites/funtime/src/pages/components/footer.shtml",
+		"/home/aaron/Sites/funtime/src/index.html",
+		"/home/aaron/Sites/funtime/src/index.shtml",
+		"/home/aaron/Sites/funtime/src/pages/components/navigation.shtml",
+		"/home/aaron/Sites/funtime/index.html",
+		"/etc/apache2/sites-available/default",
+		"/etc/apache2/sites-available/funtime",
+		"/home/aaron/Sites/funtime/src/templates/components/footer.jade",
+		"/home/aaron/Sites/funtime/src/templates/components/head.jade",
+		"/home/aaron/Sites/funtime/src/templates/index.jade",
+		"/home/aaron/Sites/funtime/src/templates/parties.jade",
+		"/home/aaron/Sites/funtime/src/templates/booking.jade",
+		"/home/aaron/Sites/funtime/src/templates/contact.jade",
+		"/home/aaron/Sites/funtime/src/templates/layout.jade",
+		"/home/aaron/Sites/funtime/src/templates/components/navigation.jade",
+		"/home/aaron/Sites/funtime/src/js/main.js",
+		"/etc/apache2/extra/httpd-vhosts.conf",
+		"/etc/hosts",
+		"/Users/fabera/Sites/funtime/.gitignore",
+		"/Users/fabera/Sites/funtime/.ftppass",
+		"/Users/fabera/Sites/funtime/src/js/main.js",
+		"/Users/fabera/Sites/funtime/src/templates/components/navigation.jade",
+		"/Users/fabera/Sites/funtime/funtime.sublime-project",
+		"/var/folders/9j/q_1zn_151gsc606qlssy5dm40000gp/T/sublime-svn-1379693008/SVN",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_dwh/style/modules/search_list.css",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/lib/script/lbi/LBI.template.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_dwh/style/modules/youMayAlsoLike.css",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/HtmlTemplates/web/modules/m_40.02_you_may_also_like_plot_page.shtml",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/lib/script/lbi/LBI.carousel.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_barratt/script/custom.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_barratt/style/modules/sliders.css",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/lib/script/lbi/LBI.zoomLightbox.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/lib/script/lbi/LBI.stickyPanel.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/lib/script/lbi/LBI.crossSale.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_barratt/style/modules/accordion.css",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/lib/script/lbi/LBI.barrattMaps.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_barratt/script/accordion.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/lib/script/lbi/LBI.investors.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/id_build/GruntFile.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/lib/script/lbi/mortgage_calculator.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/HtmlTemplates/web/modules/m_20.00_floorplans.shtml",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/lib/script/third_party/jquery.smoothZoom.min.js",
+		"/var/folders/9j/q_1zn_151gsc606qlssy5dm40000gp/T/sublime-svn-1379583289/SVN",
+		"/var/folders/9j/q_1zn_151gsc606qlssy5dm40000gp/T/sublime-svn-1379583133/SVN",
+		"/var/folders/9j/q_1zn_151gsc606qlssy5dm40000gp/T/sublime-svn-1379581369/SVN",
+		"/var/folders/9j/q_1zn_151gsc606qlssy5dm40000gp/T/sublime-svn-1379520620/SVN",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_dwh/script/accordion.js",
+		"/var/folders/9j/q_1zn_151gsc606qlssy5dm40000gp/T/sublime-svn-1379515193/SVN",
+		"/var/folders/9j/q_1zn_151gsc606qlssy5dm40000gp/T/sublime-svn-1379515103/SVN",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/HtmlTemplates/web/components/c_02.01_body_foot_barratt.shtml",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/HtmlTemplates/web/components/c_02.01_body_foot_dwh.shtml",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/HtmlTemplates/web/components/c_02.01_body_foot_ward.shtml",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/HtmlTemplates/web/components/c_02.01_body_foot_blue.shtml",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/lib/script/third_party/jquery.carouFredSel-6.1.0-packed.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_dwh/script/custom.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/Templates/Web/Controls/Modules/Global/Accordion.ascx",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/HtmlTemplates/web/modules/m_27.00_moving_forward_accordion.shtml",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_ward/script/custom.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_barratt/style/modules/youMayAlsoLike.css",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_dwh/style/modules/movingForward.css",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_ward/style/modules/youMayAlsoLike.css",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/Templates/Web/Controls/Modules/Global/AccordionContent.ascx",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_barratt/style/modules/sub_navigation_block.css",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/Templates/Web/Controls/Navigation/AlsoConsider.ascx",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/HtmlTemplates/web/modules/m_40.01_you_may_also_like.shtml",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/lib/script/lbi/LBI.offerCarousel.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/lib/script/lbi/LBI.jquery.accordion.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/lib/script/third_party/jquery-ui-1.10.3.custom.min.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/lib/script/third_party/jquery.prettyPhoto.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_barratt/style/modules/faqBox.css",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/HtmlTemplates/web/pages/p_04.00_forms/complaints_form.shtml",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/HtmlTemplates/web/stubs/postcode_search_error.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/HtmlTemplates/web/stubs/postcode_search.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/lib/script/lbi/postcode.js",
+		"/var/folders/9j/q_1zn_151gsc606qlssy5dm40000gp/T/sublime-svn-1379437862/SVN",
+		"/Users/fabera/PersonalData/Log Book/2013/Barrat Homes/Barratt forms mvt/testcode.js",
+		"/var/folders/9j/q_1zn_151gsc606qlssy5dm40000gp/T/sublime-svn-1379436387/SVN",
+		"/var/folders/9j/q_1zn_151gsc606qlssy5dm40000gp/T/sublime-svn-1379435944/SVN",
+		"/var/folders/9j/q_1zn_151gsc606qlssy5dm40000gp/T/sublime-svn-1379435866/SVN",
+		"/var/folders/9j/q_1zn_151gsc606qlssy5dm40000gp/T/sublime-svn-1379432927/SVN",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_dwh/style/modules/m_seo_column_navigation.css",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_dwh/style/modules/imports_3.css",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_dwh/style/common/base.css",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_ward/style/modules/imports_3.css",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_ward/style/common/base.css",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_ward/style/modules/m_seo_column_navigation.css",
+		"/var/folders/9j/q_1zn_151gsc606qlssy5dm40000gp/T/sublime-svn-1379432246/SVN",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/id_build/.svnignore",
+		"/var/folders/9j/q_1zn_151gsc606qlssy5dm40000gp/T/sublime-svn-1379432145/SVN",
+		"/var/folders/9j/q_1zn_151gsc606qlssy5dm40000gp/T/sublime-svn-1379432118/SVN",
+		"/var/folders/9j/q_1zn_151gsc606qlssy5dm40000gp/T/sublime-svn-1379431990/SVN",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/Templates/Web/Controls/Structure/GlobalFooter.ascx",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_barratt/script/postcode.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_dwh/script/postcode.js",
+		"/var/folders/9j/q_1zn_151gsc606qlssy5dm40000gp/T/sublime-svn-1379430081/SVN",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_ward/style/modules/search_list.css",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_ward/style/modules/m_24_sisterFeatures.css",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_dwh/style/modules/m_24_sisterFeatures.css",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/HtmlTemplates/web/modules/m_xx.xx_filter_content.shtml",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_dwh/style/modules/filterContent.css",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/HtmlTemplates/web/stubs/developmentsMapData_json.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/HtmlTemplates/web/stubs/developmentsMapData_json2.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/id_build/build.xml",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_dwh/script/modules/LBI.DWHMaps.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/lib/script/lbi/views/mortgage_calculator_payments_view_plot.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/lib/script/lbi/views/mortgage_calculator_results_view_plot.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/lib/script/lbi/views/mortgage_calculator_slider_view.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/lib/script/lbi/views/mortgage_calculator_term_slider_view.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/lib/script/lbi/models/mortgage_calculator_payments_slider_model.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_dwh/style/devices/tablet.css",
+		"/var/folders/9j/q_1zn_151gsc606qlssy5dm40000gp/T/sublime-svn-1379351193/SVN",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_barratt/style/modules/imports_4.css",
+		"/var/folders/9j/q_1zn_151gsc606qlssy5dm40000gp/T/sublime-svn-1379349468/SVN",
+		"/var/folders/9j/q_1zn_151gsc606qlssy5dm40000gp/T/sublime-svn-1379349462/SVN",
+		"/var/folders/9j/q_1zn_151gsc606qlssy5dm40000gp/T/sublime-svn-1379349276/SVN",
+		"/var/folders/9j/q_1zn_151gsc606qlssy5dm40000gp/T/sublime-svn-1379346681/SVN",
+		"/var/folders/9j/q_1zn_151gsc606qlssy5dm40000gp/T/sublime-svn-1379346593/SVN",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/HtmlTemplates/web/modules/m_mortgage_calculator_plot.shtml",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/HtmlTemplates/web/modules/m_mortgage_calculator.shtml",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/lib/script/lbi/models/mortgage_calculator_deposit_slider_model.js",
+		"/Users/fabera/Sites/barratts/branch/LBi.BarrattDevelopments/LBi.BarrattDevelopments.Web/assets/web/theme_barratt/script/mortgage_calculator.js"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"*.shtml",
+			"*.html",
+			"*.css",
+			"*.js",
+			"*.shtml",
+			"*.js",
+			"*.ascx",
+			"*.shtml",
+			"*.css",
+			"*.shtml",
+			"*.ascx",
+			"*.shtml",
+			"*.ascx",
+			"*.js",
+			"*.shtml",
+			"*.css",
+			"*.shtml",
+			"*.js",
+			"*.shtml",
+			"*.js",
+			"*.css",
+			"*.shtml",
+			"*.ascx",
+			"*.js",
+			"*.css",
+			"*.shtml",
+			"*.css",
+			"*.js",
+			"*.css",
+			"*.js",
+			"*.shtml",
+			"*.js",
+			"*.css",
+			"*.js",
+			"*.shtml",
+			"*.css",
+			"*.shtml",
+			"*.css",
+			"*.js",
+			"*.shtml",
+			"*.js",
+			"*.css",
+			"*.js",
+			"*.shtml",
+			"*.css",
+			"*.js",
+			"*.css",
+			"*.shtml",
+			"*.js",
+			"*.j",
+			"*.shtml",
+			"*.js",
+			"*.css",
+			"*.js",
+			"*.css",
+			"*.shtml",
+			"*.css",
+			"*.shtml",
+			"*.js",
+			"*.ascx",
+			"*.shtml",
+			"*.css",
+			"*.ascx",
+			"*.shtml",
+			"*.css",
+			"*.ascx",
+			"*.css",
+			"*.shtml",
+			"*.css",
+			"*.shtml",
+			"*.js",
+			"*.shtml",
+			"*.js",
+			"*.css",
+			"*.shtml",
+			"*.shtmlk",
+			"*.css",
+			"*.shtml",
+			"*.css",
+			"*.js",
+			"*.css",
+			"*.ascx",
+			"*.css",
+			"*.js",
+			"*.css",
+			"*.js",
+			"*.css",
+			"*.shtml",
+			"*.css",
+			"*.shtml",
+			"*.css",
+			"*.js",
+			"*.ascx",
+			"*.shtml",
+			"*.ascx",
+			"*.shtml",
+			"*.js",
+			"*.shtml",
+			"*.css",
+			"*.js",
+			"*.shtml",
+			"*.js",
+			"*.shtml",
+			"*.ascx",
+			"*.shtml",
+			"*.css",
+			"*.shtml",
+			"*.css, *.scss",
+			"*.css",
+			"*.shtml",
+			"*.ascx",
+			"*.shtml",
+			"*.ascx",
+			"*.shtml",
+			"*.js",
+			"*.ascx",
+			"*.js",
+			"*.shtml",
+			"*.js",
+			"*.css",
+			"*.shtml",
+			"*.css",
+			"*.js",
+			"*.css",
+			"*.shtml",
+			"*.ascx",
+			"*.shtml",
+			"*.css"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"clean",
+			"jade",
+			"media",
+			"container",
+			"dialogue",
+			"select",
+			".seeMoreLink a span",
+			"prototype",
+			"prototypre",
+			"infobox",
+			".sliderBedrooms .rightcap",
+			".ie8.js .sliderBedrooms .rightcap",
+			"image",
+			"Image",
+			"image",
+			"fullResImage",
+			"console",
+			"first",
+			"accordionItemIndex1",
+			"accordionClick",
+			"accordionItemIndex1",
+			"obj",
+			"open",
+			"accordion.run",
+			"accordion.init",
+			"accordion.open",
+			"parentOpen",
+			"movingForward",
+			"console",
+			"alert",
+			"updateSizes",
+			"accordion",
+			"youmay",
+			"console",
+			"accordion_sprite",
+			"movingForward",
+			"h3",
+			"</h3>",
+			"plot_icons_small",
+			"#movingForward .subNav a:hover span",
+			"youMayAlsoLike",
+			"accordionTabs",
+			"movingForward",
+			"span",
+			"h3",
+			"accordionClosed",
+			"youMayAlsoLike",
+			"header",
+			"ui-accordion-header",
+			"accordionClosed",
+			"accordionClick",
+			"#movingForward .contentWrapper",
+			"#movingForward .subNav",
+			".contentWrapper",
+			"accordionItem",
+			"content",
+			"#movingForward .contentWrapper",
+			"#movingForward .content",
+			"carousel",
+			"helpingYouBuyWrapper0",
+			"movingforward",
+			"investors",
+			"<div class=\"accordionItem\">",
+			"movingForward",
+			"changed",
+			"dummy_floorplan.jpg",
+			"ctaSitePlan",
+			"pp_close",
+			".FAQ .box .accordionOpen",
+			"complaintsForm",
+			"pageURL",
+			"listbullet",
+			"postcodesearch",
+			"anotherModule",
+			"configuration",
+			"postCodeSearch",
+			"commonMapMarkers",
+			"map/listBulletOrange.png",
+			"listBulletOrange.png",
+			"48px",
+			"cornerSpriteBorder10px.png",
+			"offersContainer",
+			"cornerSpriteBorder10px.png",
+			"dwh",
+			"infoBox",
+			"setMap",
+			"infobox",
+			"mapMarkerClusteredCalloutItemContent",
+			"InfoBox",
+			"remove",
+			"secondaryNav",
+			"smooth_zoom_preloader",
+			"conso;e",
+			"foo",
+			"doo",
+			"fullResImage",
+			"ctaSiteplan",
+			"remove",
+			"mortgage",
+			"MortgageCalculatorTracking",
+			"mortgageCalculatorCTA",
+			"\"></script>",
+			"<script type=\"text/javascript\" src=\"/assets/web",
+			"MortgageCalculatorView",
+			"suffixYears",
+			"this.suffixYears",
+			"suffixyears",
+			"PaymentsSliderModel",
+			"PaymentsModelPlot",
+			"PaymentsViewPlot",
+			"MortgageCalculatorResultsModelPlot",
+			"mortgageCalculatorPlotResults",
+			"htbLoan",
+			"loanValueHTB",
+			"monthlyRepayment",
+			"MortgageCalculatorModel",
+			"minDeposit",
+			"response/value/plotPrice",
+			"monthlyRepaymentHTB",
+			"monthlyPaymentHTB",
+			"monthlyPayment",
+			"this.pound",
+			"htbLoan",
+			"loanValueHTB",
+			"mortgagePercent",
+			"mortgagePercentHTB",
+			"loanPercentHTB",
+			"HTBhousePricePercent"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'&pound;'",
+			".ctaVideoVirtual",
+			"formRow",
+			"sliderContainers",
+			"formRow",
+			"sliderContainers",
+			"error",
+			".developmentPromotion",
+			"formFieldGeneric",
+			"formFieldDefault",
+			"registerEmail",
+			"[imgpath]logotop.gif",
+			"HBOfTheYear",
+			"textField",
+			"[imgpath]",
+			"[imagepath]",
+			"[images]",
+			"formFieldGeneric",
+			"formWidthNarrow",
+			"",
+			"formWidthNarrow",
+			"formWidthWide",
+			"formFieldGeneric",
+			"formWidthNarrow",
+			"formFieldGeneric",
+			"formWidthWide",
+			"formFieldGeneric",
+			"listBulletOrange.png",
+			"barratts_logo.png",
+			"<a href=\"http://www.barratthomes.co.uk/offers/\" style=\"color:#519032\">www.barratthomes.co.uk/offers/</a>",
+			"images/",
+			"../images/wrd_logo.jpg",
+			"../images/davidWilsonHolmesLogo.gif",
+			"../images/barrattsLogo.gif",
+			"../images",
+			"000000",
+			"519032",
+			"4C4C4C",
+			"secondary_cta_icons.gif",
+			"secondary_cta_icons.png",
+			"navigationColumn",
+			"LBI.addTo",
+			"class=\"closeToolbarPanel\">Close",
+			"",
+			"homesBeyondSearch"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 37.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"g",
+				"funtime/Gruntfile.js"
+			],
+			[
+				"boo",
+				"funtime/src/assets/bootstrap.css"
+			],
+			[
+				"head",
+				"funtime/src/pages/components/head.shtml"
+			],
+			[
+				"ine",
+				"funtime/src/pages/index.shtml"
+			],
+			[
+				".git",
+				"funtime/.gitignore"
+			],
+			[
+				"boot",
+				"funtime/src/assets/bootstrap.min.css"
+			],
+			[
+				"index",
+				"funtime/src/js/index.js"
+			],
+			[
+				"inde",
+				"funtime/src/js/index.js"
+			],
+			[
+				"ma",
+				"funtime/src/js/main.js"
+			],
+			[
+				"ind",
+				"funtime/src/pages/index.shtml"
+			],
+			[
+				"con",
+				"funtime/src/pages/contact.shtml"
+			],
+			[
+				"bo",
+				"funtime/src/pages/booking.shtml"
+			],
+			[
+				"part",
+				"funtime/src/pages/parties.shtml"
+			],
+			[
+				"nav",
+				"funtime/src/pages/components/navigation.shtml"
+			],
+			[
+				"uin",
+				"funtime/src/index.shtml"
+			],
+			[
+				"git",
+				".gitignore"
+			],
+			[
+				"main",
+				"src/js/main.js"
+			],
+			[
+				"man",
+				"src/js/main.js"
+			],
+			[
+				"la",
+				"src/templates/layout.jade"
+			],
+			[
+				"lay",
+				"src/templates/layout.jade"
+			],
+			[
+				"navi",
+				"src/templates/components/navigation.jade"
+			],
+			[
+				"grunt",
+				"Gruntfile.js"
+			],
+			[
+				"nagi",
+				"src/templates/components/navigation.jade"
+			],
+			[
+				"components",
+				"src/templates/components/head.jade"
+			],
+			[
+				"foo",
+				"src/templates/components/footer.jade"
+			],
+			[
+				"templates",
+				"src/templates/components/footer.jade"
+			],
+			[
+				"lbibarr",
+				"assets/web/lib/script/lbi/LBI.barrattMaps.js"
+			],
+			[
+				"base.css",
+				"assets/web/lib/style/base.css"
+			],
+			[
+				"base.",
+				"assets/web/theme_barratt/style/common/base.css"
+			],
+			[
+				"lbitempl",
+				"assets/web/lib/script/lbi/LBI.template.js"
+			],
+			[
+				"lbi.b",
+				"assets/web/lib/script/lbi/LBI.barrattMaps.js"
+			],
+			[
+				"smoo",
+				"assets/web/lib/script/third_party/jquery.smoothZoom.min.js"
+			],
+			[
+				"smooth",
+				"assets/web/lib/script/third_party/jquery.smoothZoom.min.js"
+			],
+			[
+				"floorplans",
+				"HtmlTemplates/web/modules/m_20.00_floorplans.shtml"
+			],
+			[
+				"mortgagecalculator.js",
+				"assets/web/lib/script/lbi/mortgage_calculator.js"
+			],
+			[
+				"gruntfi",
+				"id_build/GruntFile.js"
+			],
+			[
+				"lbicarou",
+				"assets/web/lib/script/lbi/LBI.carousel.js"
+			],
+			[
+				"barrattmaps",
+				"assets/web/lib/script/lbi/LBI.barrattMaps.js"
+			],
+			[
+				"investor",
+				"assets/web/lib/script/lbi/LBI.investors.js"
+			],
+			[
+				"acco",
+				"assets/web/theme_dwh/script/accordion.js"
+			],
+			[
+				"bodyfoo",
+				"HtmlTemplates/web/components/c_02.01_body_foot_ward.shtml"
+			],
+			[
+				"bodyfo",
+				"HtmlTemplates/web/components/c_02.01_body_foot_blue.shtml"
+			],
+			[
+				"bodyfoot",
+				"HtmlTemplates/web/components/c_02.01_body_foot_barratt.shtml"
+			],
+			[
+				"caroufres",
+				"assets/web/lib/script/third_party/jquery.carouFredSel-6.1.0-packed.js"
+			],
+			[
+				"accordin",
+				"assets/web/theme_barratt/script/accordion.js"
+			],
+			[
+				"accordion.cs",
+				"assets/web/theme_barratt/style/modules/accordion.css"
+			],
+			[
+				"custom",
+				"assets/web/theme_barratt/script/custom.js"
+			],
+			[
+				"lbi.car",
+				"assets/web/lib/script/lbi/LBI.carousel.js"
+			],
+			[
+				"accordion",
+				"Templates/Web/Controls/Modules/Global/AccordionContent.ascx"
+			],
+			[
+				"accord.css",
+				"assets/web/theme_barratt/style/modules/accordion.css"
+			],
+			[
+				"youmay",
+				"assets/web/theme_ward/style/modules/youMayAlsoLike.css"
+			],
+			[
+				"youmayl",
+				"assets/web/theme_dwh/style/modules/youMayAlsoLike.css"
+			],
+			[
+				"movingfor",
+				"HtmlTemplates/web/modules/m_27.00_moving_forward_accordion.shtml"
+			],
+			[
+				"movingfo",
+				"assets/web/theme_dwh/style/modules/movingForward.css"
+			],
+			[
+				"subnavigation",
+				"assets/web/theme_barratt/style/modules/sub_navigation_block.css"
+			],
+			[
+				"custom.",
+				"assets/web/theme_dwh/script/custom.js"
+			],
+			[
+				"youmayalsolike.sh",
+				"HtmlTemplates/web/modules/m_40.01_you_may_also_like.shtml"
+			],
+			[
+				"lbicarouse",
+				"assets/web/lib/script/lbi/LBI.carousel.js"
+			],
+			[
+				"accordion.css",
+				"assets/web/theme_barratt/style/modules/accordion.css"
+			],
+			[
+				"youmaylsi",
+				"HtmlTemplates/web/modules/m_40.01_you_may_also_like.shtml"
+			],
+			[
+				"lbi.carouse",
+				"assets/web/lib/script/lbi/LBI.carousel.js"
+			],
+			[
+				"jqueryui",
+				"assets/web/lib/script/third_party/jquery-ui-1.10.3.custom.min.js"
+			],
+			[
+				"accordion.js",
+				"assets/web/lib/script/lbi/LBI.jquery.accordion.js"
+			],
+			[
+				"accordi",
+				"assets/web/theme_barratt/script/accordion.js"
+			],
+			[
+				"smoothzom",
+				"assets/web/lib/script/third_party/jquery.smoothZoom.min.js"
+			],
+			[
+				"barratmaps",
+				"assets/web/lib/script/lbi/LBI.barrattMaps.js"
+			],
+			[
+				"postcode",
+				"assets/web/lib/script/lbi/postcode.js"
+			],
+			[
+				"imports",
+				"assets/web/theme_ward/style/modules/imports_3.css"
+			],
+			[
+				"postcode.js",
+				"assets/web/lib/script/lbi/postcode.js"
+			],
+			[
+				"bodyfootwar",
+				"HtmlTemplates/web/components/c_02.01_body_foot_ward.shtml"
+			],
+			[
+				"bodyfootdw",
+				"HtmlTemplates/web/components/c_02.01_body_foot_dwh.shtml"
+			],
+			[
+				"postc",
+				"assets/web/lib/script/lbi/postcode.js"
+			],
+			[
+				"bodyfootward",
+				"HtmlTemplates/web/components/c_02.01_body_foot_ward.shtml"
+			],
+			[
+				"bodyfootd",
+				"HtmlTemplates/web/components/c_02.01_body_foot_dwh.shtml"
+			],
+			[
+				"post",
+				"assets/web/theme_dwh/script/postcode.js"
+			],
+			[
+				"lbi.barrattmaps.js",
+				"assets/web/lib/script/lbi/LBI.barrattMaps.js"
+			],
+			[
+				"dwhmaps",
+				"assets/web/theme_dwh/script/modules/LBI.DWHMaps.js"
+			],
+			[
+				"build",
+				"id_build/build.xml"
+			],
+			[
+				"developmmap",
+				"HtmlTemplates/web/stubs/developmentsMapData_json2.js"
+			],
+			[
+				"json",
+				"HtmlTemplates/web/stubs/developmentsMapData_json.js"
+			],
+			[
+				"template",
+				"assets/web/lib/script/lbi/LBI.template.js"
+			],
+			[
+				"import",
+				"assets/web/theme_barratt/style/modules/imports_4.css"
+			],
+			[
+				"zoomb",
+				"assets/web/lib/script/lbi/LBI.zoomLightbox.js"
+			],
+			[
+				"pretty.js",
+				"assets/web/lib/script/third_party/jquery.prettyPhoto.js"
+			],
+			[
+				"tablet",
+				"assets/web/theme_dwh/style/devices/tablet.css"
+			],
+			[
+				"mortgage_calculator.js",
+				"assets/web/lib/script/lbi/mortgage_calculator.js"
+			],
+			[
+				"mortgage_calculator",
+				"assets/web/lib/script/lbi/views/mortgage_calculator_payments_view_plot.js"
+			],
+			[
+				"paymentslider",
+				"assets/web/lib/script/lbi/models/mortgage_calculator_payments_slider_model.js"
+			],
+			[
+				"mortgagecalculatorp",
+				"HtmlTemplates/web/modules/m_mortgage_calculator_plot.shtml"
+			],
+			[
+				"mortgagecalculator.shtml",
+				"HtmlTemplates/web/modules/m_mortgage_calculator.shtml"
+			],
+			[
+				"mortgagcalculator.sht",
+				"HtmlTemplates/web/modules/m_mortgage_calculator.shtml"
+			],
+			[
+				"depositslidermod",
+				"assets/web/lib/script/lbi/models/mortgage_calculator_deposit_slider_model.js"
+			],
+			[
+				"custm",
+				"assets/web/theme_barratt/script/custom.js"
+			],
+			[
+				"body",
+				"HtmlTemplates/web/components/c_02.01_body_foot_barratt.shtml"
+			],
+			[
+				"tracking",
+				"assets/web/lib/script/lbi/LBI.mortgageCalculator.tracking.js"
+			],
+			[
+				"tracking.js",
+				"assets/web/lib/script/lbi/LBI.mortgageCalculator.tracking.js"
+			],
+			[
+				"mortgage_calculator_payments_view_plot",
+				"assets/web/lib/script/lbi/views/mortgage_calculator_payments_view_plot.js"
+			],
+			[
+				"gruntfile",
+				"id_build/GruntFile.js"
+			],
+			[
+				"mortgagecalculatorview",
+				"assets/web/lib/script/lbi/LBI.mortgageCalculator.view.js"
+			],
+			[
+				"paymentview",
+				"assets/web/lib/script/lbi/views/mortgage_calculator_payments_slider_view.js"
+			],
+			[
+				"depositvi",
+				"assets/web/lib/script/lbi/views/mortgage_calculator_deposit_slider_view.js"
+			],
+			[
+				"viewplot",
+				"assets/web/lib/script/lbi/views/mortgage_calculator_payments_view_plot.js"
+			],
+			[
+				"paymentslidermo",
+				"assets/web/lib/script/lbi/models/mortgage_calculator_payments_slider_model.js"
+			],
+			[
+				"termslidermo",
+				"assets/web/lib/script/lbi/models/mortgage_calculator_term_slider_model.js"
+			],
+			[
+				"interestslidermod",
+				"assets/web/lib/script/lbi/models/mortgage_calculator_interest_slider_model.js"
+			],
+			[
+				"mortgage_calculator_deposit_slider_mode",
+				"assets/web/lib/script/lbi/models/mortgage_calculator_deposit_slider_model.js"
+			],
+			[
+				"termslidmo",
+				"assets/web/lib/script/lbi/models/mortgage_calculator_term_slider_model.js"
+			],
+			[
+				"mortgagecalculatormod",
+				"assets/web/lib/script/lbi/models/mortgage_calculator_model.js"
+			],
+			[
+				"resultsmodel",
+				"assets/web/lib/script/lbi/models/mortgage_calculator_results_model.js"
+			],
+			[
+				"mortgage_calculator_payments_slider_model_plot",
+				"assets/web/lib/script/lbi/models/mortgage_calculator_payments_slider_model_plot.js"
+			],
+			[
+				"paymentsliderview",
+				"assets/web/lib/script/lbi/views/mortgage_calculator_payments_slider_view.js"
+			],
+			[
+				"mortgagecalresult",
+				"assets/web/lib/script/lbi/models/mortgage_calculator_results_model.js"
+			],
+			[
+				"payments",
+				"assets/web/lib/script/lbi/models/mortgage_calculator_payments_slider_model.js"
+			],
+			[
+				"mortgage_calculator_results_model_plot",
+				"assets/web/lib/script/lbi/models/mortgage_calculator_results_model_plot.js"
+			],
+			[
+				"depositview.",
+				"assets/web/lib/script/lbi/views/mortgage_calculator_deposit_slider_view.js"
+			],
+			[
+				"resultsviewplot",
+				"assets/web/lib/script/lbi/views/mortgage_calculator_results_view_plot.js"
+			],
+			[
+				"paymentsslidermode",
+				"assets/web/lib/script/lbi/models/mortgage_calculator_payments_slider_model.js"
+			],
+			[
+				"mortgagesearch",
+				"assets/web/lib/script/lbi/m_mortgage_calculator_search_view.js"
+			],
+			[
+				"sliderview",
+				"assets/web/lib/script/lbi/views/mortgage_calculator_payments_slider_view.js"
+			],
+			[
+				"sliderpayment",
+				"assets/web/lib/script/lbi/models/mortgage_calculator_payments_slider_model.js"
+			],
+			[
+				"paymentslider.js",
+				"assets/web/lib/script/lbi/views/mortgage_calculator_payments_slider_view.js"
+			],
+			[
+				"mortgage_calculator_term_slider_model",
+				"assets/web/theme_barratt/script/models/mortgage_calculator_term_slider_model.js"
+			],
+			[
+				"mortgage_calculator_payments_slider_model",
+				"assets/web/theme_barratt/script/models/mortgage_calculator_payments_slider_model.js"
+			],
+			[
+				"paymentmodl",
+				"assets/web/theme_barratt/script/models/mortgage_calculator_payments_slider_model.js"
+			],
+			[
+				"termmod",
+				"assets/web/theme_barratt/script/models/mortgage_calculator_term_slider_model.js"
+			],
+			[
+				"paymentsmo",
+				"assets/web/theme_barratt/script/models/mortgage_calculator_payments_slider_model.js"
+			],
+			[
+				"paymentsslider",
+				"assets/web/theme_barratt/script/views/mortgage_calculator_payments_slider_view.js"
+			],
+			[
+				"gruntfil",
+				"id_build/GruntFile.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 346.0,
+	"status_bar_visible": true
+}
