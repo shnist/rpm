@@ -1,0 +1,15 @@
+{
+  "name": "rpm",
+  "version": "0.0.1",
+  "description": "Physical and digital music",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shnist/rpm.git"
+  },
+  "author": "DigitasLBi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shnist/rpm/issues"
+  }
+}
