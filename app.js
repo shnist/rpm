@@ -2,6 +2,8 @@ var spotify = require('./spotify/spotify')( {
 	appkeyFile: './spotify_appkey.key'
 });
 
+var user = require('./spotify_login');
+
 spotify.ready(function() {
 	var playlists;
 	playlists = spotify.getPlaylists();
@@ -38,4 +40,4 @@ spotify.ready(function() {
 });
 
 
-spotify.login('aaronfaber', '23!Arsakia1089', true, false);
+spotify.login(user.name, user.password, true, false);
