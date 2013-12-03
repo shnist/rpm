@@ -18,3 +18,4 @@ node_modules
 spotify
 settings
 cache
+spotify_login.js
