@@ -3,6 +3,7 @@ package com.swansonb.imagematching.controller;
 import com.swansonb.imagematching.datastore.AlbumStore;
 import com.swansonb.imagematching.model.Album;
 import com.swansonb.imagematching.model.Image;
+import com.swansonb.imagematching.model.Status;
 import com.swansonb.imagematching.utils.ImageHelper;
 import com.swansonb.imagematching.utils.JsonUtils;
 import org.opencv.core.Mat;
@@ -27,12 +28,12 @@ public class ImageController {
 	private AlbumStore albumStore;
 
 	public ImageController() throws NoSuchFieldException, IllegalAccessException {
-		initCamera();
+		initCamera(0);
 	}
 
-	private void initCamera() {
-		camera = new VideoCapture(1);
-		camera.open(0); //Useless
+	private void initCamera(int i) {
+		camera = new VideoCapture(i);
+		camera.open(i); //Useless
 
 		if (!camera.isOpened()) {
 			System.out.println("Camera Error");
@@ -40,6 +41,20 @@ public class ImageController {
 			System.out.println("Camera OK?");
 		}
 	}
+
+	@RequestMapping(value = "/camera", method = RequestMethod.POST)
+	public @ResponseBody String camera(
+			@RequestParam("id") String id) throws IOException {
+		try {
+			Integer cameraId = Integer.valueOf(id);
+			initCamera(cameraId);
+		} catch(NumberFormatException e) {
+			return constructStatus("error", "invalid camera id");
+		}
+
+		return constructStatus("success", "Camera changed");
+	}
+
 
 	@RequestMapping(value = "/snap", method = RequestMethod.GET)
 	public @ResponseBody String snap() throws IOException {
@@ -49,7 +64,7 @@ public class ImageController {
 		}
 
 		Image temp = albumStore.storeImage(imageMat);
-		return imageTag(imageMat);
+		return JsonUtils.toJson(temp);
 	}
 
 	@RequestMapping(value = "/identify", method = RequestMethod.GET)
@@ -62,9 +77,9 @@ public class ImageController {
 		Album bestMatch = findBestMatch(image);
 
 		if (bestMatch != null) {
-			return imageTag(image) + imageTag(bestMatch.getThumb());
+			return JsonUtils.toJson(bestMatch);
 		} else {
-			return imageTag(image);
+			return constructStatus("error", "No best match");
 		}
 	}
 
@@ -81,12 +96,6 @@ public class ImageController {
 			}
 		}
 		return bestMatch;
-	}
-
-	@RequestMapping(value = "/list", method = RequestMethod.GET,
-			produces = "application/json; charset=utf-8")
-	public @ResponseBody String list() throws IOException {
-		return JsonUtils.toJson(albumStore.getAlbums());
 	}
 
 	@RequestMapping(value = "/update", method = RequestMethod.POST,
@@ -115,7 +124,7 @@ public class ImageController {
 	}
 
 	private String constructStatus(String status, String message) {
-		return "{status:\"" + status + "\",message:\"" + message + "\"}";
+		return JsonUtils.toJson(new Status(status, message));
 	}
 
 	private String imageTag(Mat image) {
