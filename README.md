@@ -22,7 +22,7 @@ If you use `brew` then you can install lib-spotify pretty easily using:
 * CD into the root of the project
 * Run `node-gyp configure && node-gyp build`
 * This will compile the library to use as a node module. This is located in `/build/Release/`
-* Copy the contents of this folder into a folder called `spotify` into the RPM project (at root level)
+* Copy the contents of this folder into a folder called `lib_spotify` into the spotify folder of the project
 
 
 ## Image Matcher
