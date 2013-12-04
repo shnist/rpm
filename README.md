@@ -46,6 +46,7 @@ If you use `brew` then you can install lib-spotify pretty easily using:
 ### Log in
 In order to be able to use the spotify part of the application you need to create `spotify_login.js` file
 with an object that contains your spotify user name and password. An example is given below:
+
 	exports.user = {
 		name: 'your username',
 		password: 'your password'
