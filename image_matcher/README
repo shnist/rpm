@@ -1,1 +1,15 @@
-This file was created by IntelliJ IDEA 12.1.6 for binding GitHub repository
+ImageMatcher is a Spring Boot Java application that provides a RESTful interface to a connected camera and image matching algorithms.
+
+The Images are stored in memory (HashMap) and on the file system (under data/images).
+The album metadata is also stored in memory (separate HashMap) and on the file system (under data/albums) as JSON.
+
+RESTful Endpoints:
+
+
+## /snap
+
+Snap tells the camera to take an image and save it to the file system.
+
+Returns:
+
+{
