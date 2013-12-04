@@ -5,9 +5,11 @@ Physicalising music
 ## Dependencies
 
 ### NPM
+The following packages need to be installed globaller. You may need to be sudo in order to do this.
+
 npm install -g node-gyp
 
-You may need to be sudo in order to install it globally.
+To install local dependencies simply run `npm install` in the root of the project.
 
 ### Lib spotify
 If you use `brew` then you can install lib-spotify pretty easily using:
