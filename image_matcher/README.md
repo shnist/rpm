@@ -3,9 +3,9 @@ ImageMatcher is a Spring Boot Java application that provides a RESTful interface
 The Images are stored in memory (HashMap) and on the file system (under data/images).
 The album metadata is also stored in memory (separate HashMap) and on the file system (under data/albums) as JSON.
 
-RESTful Endpoints:
+## RESTful Endpoints:
 
-## /snap - GET
+### /snap - *GET*
 
 Snap tells the camera to take an image and save it to the file system.
 
@@ -16,7 +16,7 @@ Snap tells the camera to take an image and save it to the file system.
 	"image" : "Base64 encoded PNG"
 }
 
-## /update - POST
+### /update - *POST*
 
 Creates an album give an image id, artist and album name
 
@@ -44,7 +44,7 @@ Error:
 	"message" : "unable to create album"
 }
 
-## /identify - GET
+### /identify - *GET*
 
 Takes an image (but does not save it to the filesystem) and then loops through the albums and returns the album with the
 image that most closest matches the image taken.
@@ -69,7 +69,7 @@ Error:
 	"message" : "No best match found"
 }
 
-## /camera - POST
+### /camera - *POST*
 
 Changes the attached camera by providing it's id. *This is used during initial setup to choose the correct camera on systems
 with multiple camera*. This will need to be done each time the application is started as this information is not persisted.
