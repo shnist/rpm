@@ -24,17 +24,6 @@ If you use `brew` then you can install lib-spotify pretty easily using:
 * This will compile the library to use as a node module. This is located in `/build/Release/`
 * Copy the contents of this folder into a folder called `spotify` into the RPM project (at root level)
 
-### Updating the image matcher code
-
-#### For the first time
-* Clone the image matcher library onto your machine
-`git clone https://github.com/bjsswanson/ImageMatcher.git`
-* Copy the contents of the folder into the `image_matcher` folder in the rpm project
-
-#### Subsequent updates
-* CD into the clone of the image matcher library
-* Run `git pull origin master` to fetch the latest code
-* Copy the contents into the `image_matcher` folder in the rpm project
 
 ### Running image matcher code
 * CD into the `image_matcher` folder in the rpm project
