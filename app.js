@@ -2,7 +2,7 @@ var spotify = require('./spotify/spotify')( {
 	appkeyFile: './spotify_appkey.key'
 });
 
-var user = require('./spotify_login');
+var login = require('./spotify_login');
 
 spotify.ready(function() {
 	var playlists;
@@ -17,9 +17,6 @@ spotify.ready(function() {
 		}
 	}
 
-	//console.log(filteredPlaylists[0]);
-
-
 	var search = new spotify.Search('Lady Gaga – A Very Gaga Holiday');
 	search.execute(function (error, searchResult) {
 		console.log(searchResult);
@@ -28,16 +25,6 @@ spotify.ready(function() {
 
 		spotify.player.play(track);
 	});
-
-/*	playlist.on('playlist_renamed', function(err, playlist) {
-		console.log(playlist.name);
-	});*/
-
-/*	playlists.on('playlist_tracks_added', function(err, tracks) {
-		console.log(tracks);
-	});*/
-	//console.log(playlists)
 });
 
-
-spotify.login(user.name, user.password, true, false);
+spotify.login(login.user.name, login.user.password, true, false);
