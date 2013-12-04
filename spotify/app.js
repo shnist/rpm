@@ -1,4 +1,4 @@
-var spotify = require('./spotify/spotify')( {
+var spotify = require('./lib_spotify/spotify')( {
 	appkeyFile: './spotify_appkey.key'
 });
 
