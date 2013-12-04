@@ -42,7 +42,8 @@ public class ImageController {
 		}
 	}
 
-	@RequestMapping(value = "/camera", method = RequestMethod.POST)
+	@RequestMapping(value = "/camera", method = RequestMethod.POST,
+			produces = "application/json; charset=utf-8")
 	public @ResponseBody String camera(
 			@RequestParam("id") String id) throws IOException {
 		try {
@@ -56,7 +57,8 @@ public class ImageController {
 	}
 
 
-	@RequestMapping(value = "/snap", method = RequestMethod.GET)
+	@RequestMapping(value = "/snap", method = RequestMethod.GET,
+			produces = "application/json; charset=utf-8")
 	public @ResponseBody String snap() throws IOException {
 		Mat imageMat = new Mat();
 		if (camera.isOpened()) {
@@ -67,7 +69,8 @@ public class ImageController {
 		return JsonUtils.toJson(temp);
 	}
 
-	@RequestMapping(value = "/identify", method = RequestMethod.GET)
+	@RequestMapping(value = "/identify", method = RequestMethod.GET,
+			produces = "application/json; charset=utf-8")
 	public @ResponseBody String identify() throws IOException {
 		Mat image = new Mat();
 		if (camera.isOpened()) {
