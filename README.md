@@ -2,7 +2,7 @@
 
 Physicalising music
 
-## Dependencies
+## Set Up
 
 ### NPM
 The following packages need to be installed globaller. You may need to be sudo in order to do this.
@@ -40,3 +40,15 @@ If you use `brew` then you can install lib-spotify pretty easily using:
 * CD into the `image_matcher` folder in the rpm project
 * Run `mvn package` to compile the project
 * Once compiled run `sh start.sh` to initialise
+
+
+## Spotify Service
+### Log in
+In order to be able to use the spotify part of the application you need to create `spotify_login.js` file
+with an object that contains your spotify user name and password. An example is given below:
+	exports.user = {
+		name: 'your username',
+		password: 'your password'
+	};
+
+The file needs to reside in the same place as the Spotify code.
