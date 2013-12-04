@@ -7,7 +7,7 @@ Physicalising music
 ### NPM
 The following packages need to be installed globaller. You may need to be sudo in order to do this.
 
-npm install -g node-gyp
+`npm install -g node-gyp`
 
 To install local dependencies simply run `npm install` in the root of the project.
 
