@@ -135,6 +135,9 @@ The file needs to reside in the same place as the Spotify code.
 ## Noduino service
 ### Events
 The arduino provides to forms of functionality, a toggle switch (to dictate whether the device is on play or record) and a button to trigger the action.
+
+#### Toggle Switch
+
 In the rpmDuino file events are set for both, firstly the toogle switch - set on pin 10 of the arduino - listens for a change event, if the change event is fired a global variable of toggleSwitch is updated. 
 		
 		board.withButton({pin: 10}, function(err, Button) {
@@ -149,6 +152,8 @@ In the rpmDuino file events are set for both, firstly the toogle switch - set on
           });
 
 From the B event we can grab the pushed state, if this is set to true we assume a play state if false a record state.
+
+#### Button
 
 For the button we listen to the Push event
 
@@ -168,4 +173,4 @@ For the button we listen to the Push event
 
 if the event is fired and the var of toggleSwitch is true we know to call the play part of the api, otherwise we start the record route.
 
-As default we assume False on toggleSwitch since we assume no record has been trained.
+As default we assume False on toggleSwitch since we assume no record has been trained.	
