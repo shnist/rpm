@@ -131,3 +131,41 @@ with an object that contains your spotify user name and password. An example is 
 	};
 
 The file needs to reside in the same place as the Spotify code.
+
+## Noduino service
+### Events
+The arduino provides to forms of functionality, a toggle switch (to dictate whether the device is on play or record) and a button to trigger the action.
+In the rpmDuino file events are set for both, firstly the toogle switch - set on pin 10 of the arduino - listens for a change event, if the change event is fired a global variable of toggleSwitch is updated. 
+		
+		board.withButton({pin: 10}, function(err, Button) {
+            Button.on('change', function(B) {
+                
+                if(B.pushed === true){
+                  toggleSwitch = false;
+                }else{
+                  toggleSwitch = true;
+                }
+            });
+          });
+
+From the B event we can grab the pushed state, if this is set to true we assume a play state if false a record state.
+
+For the button we listen to the Push event
+
+		board.withButton({pin: 6}, function(err, Button) {
+        	Button.on('push', function(B) {
+	            switch(toggleSwitch){
+	              case true :
+	                console.log('pin 6 & start playing', i++);
+	              break;
+	              case false :
+	                console.log('pin 6 & start recording', i++);
+	              break
+	            }
+
+        	});
+    	});
+
+if the event is fired and the var of toggleSwitch is true we know to call the play part of the api, otherwise we start the record route.
+
+As default we assume False on toggleSwitch since we assume no record has been trained.

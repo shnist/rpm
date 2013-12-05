@@ -25,6 +25,7 @@ define(function() {
           })
       };
 
+      //button to trigger an action
       Noduino.connect(function(err, board) {   
           board.withButton({pin: 6}, function(err, Button) {
             //i is used for debugging
@@ -36,10 +37,10 @@ define(function() {
             Button.on('push', function(B) {
                 url = 'watevadaurlizblud.html';
                 success = function(){
-                  //do some shit on success
+                  console.log('do some shit on success');
                 };
                 error = function(){
-                  //do some shit on fail
+                  console.log("do some shit on fail");
                 };
 
                 switch(toggleSwitch){
@@ -56,6 +57,8 @@ define(function() {
             });
           });
 
+
+          //toggle switch for play or record functionality
           board.withButton({pin: 10}, function(err, Button) {
             //i is used for debugging
             var i = 0;
