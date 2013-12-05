@@ -34,8 +34,6 @@ define(function() {
             var url;
 
             Button.on('push', function(B) {
-                console.log(toggleSwitch);
-                
                 url = 'watevadaurlizblud.html';
                 success = function(){
                   //do some shit on success
@@ -64,13 +62,15 @@ define(function() {
 
             Button.on('change', function(B) {
                 
-                if(toggleSwitch === true){
+                if(B.pushed === true){
                   toggleSwitch = false;
+                  console.log('event should be true', B.pushed);
+                  console.log('expect toggle to be false = ', toggleSwitch);
                 }else{
                   toggleSwitch = true;
+                  console.log('event should be false', B.pushed);
+                  console.log('expect toggle to be true = ', toggleSwitch);
                 }
-                
-                console.log('pin 10', toggleSwitch);
             });
           });
       });
