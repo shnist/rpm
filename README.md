@@ -16,6 +16,9 @@ If you use `brew` then you can install lib-spotify pretty easily using:
 
 `brew install libspotify`
 
+### Noduino
+To run rpmDuino you need to cd in the /noduino folder and run `node srv.web.js`
+
 ### Compiling the lib-spotify library
 * Clone the library onto your machine
 `git clone https://github.com/FrontierPsychiatrist/node-spotify.git lib-spotify`
