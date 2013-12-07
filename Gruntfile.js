@@ -32,13 +32,21 @@ module.exports = function (grunt) {
 		},
 
 
+		concat: {
+			dist: {
+				src: 'app/scripts/**/*.js',
+				dest: 'app/dist/RPM.js'
+			}
+		},
+
+
 		watch: {
 			jshint: {
 				files: [
 					'Gruntfile.js',
 					'app/scripts/**/*'
 				],
-				tasks: 'jshint'
+				tasks: ['jshint', 'concat']
 			},
 			sass: {
 				files: ['assets/sass/*.scss'],
@@ -53,7 +61,8 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-contrib-concat');
 
 
-	grunt.registerTask('default', ['jshint', 'sass']);
+	grunt.registerTask('default', ['jshint', 'concat', 'sass']);
 };
