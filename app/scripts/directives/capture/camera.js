@@ -5,21 +5,34 @@ angular.module('RPM.directives')
 			restrict: 'E',
 			replace: true,
 			templateUrl: 'scripts/templates/capture/camera.html',
+			scope: '=',
 			link: function (scope, elem, attrs) {
 
 				var createImage = function (data) {
 					elem.find('img')[0].src = data;
 				};
 
-				scope.getImage().then(function (data) {
 
-					if (data.capture) {
-						createImage(data.capture.image);
-					}
+				var saveImage = function () {
 
-				});
+					scope.saveImage().then(function (data) {
 
-				console.log('test');
+						if (data.capture) {
+							createImage(data.capture.image);
+							scope.imageId = data.capture.id;
+						}
+
+					});
+
+				};
+
+
+				var getImage = function () {
+					scope.getImage();
+				};
+
+				saveImage();
+				console.log(scope);
 
 			}
 		};

@@ -6,15 +6,16 @@ angular.module('RPM.services')
 		var url = 'http://localhost:8080';
 
 
-		this.getImage = function () {
-			return $http.get(url + '/snap').then(function (res) {
+		var json = {
+			"status": "okay",
+			"error": {
+				"message": "there was an error"
+			}
+		};
 
-				var json = {
-					"status": "okay",
-					"error": {
-						"message": "there was an error"
-					}
-				};
+
+		this.saveImage = function () {
+			return $http.get(url + '/snap').then(function (res) {
 
 				if (res.status === 200 && res.data.image) {
 					delete json.error;
@@ -22,6 +23,16 @@ angular.module('RPM.services')
 				}
 
 				return json;
+			});
+		};
+
+
+
+		this.getImage = function () {
+			return $http.get(url + '/identify', { cache: false }).then(function (res) {
+
+				return res;
+
 			});
 		};
 

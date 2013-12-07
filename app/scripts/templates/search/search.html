@@ -1,0 +1,6 @@
+<form novalidate ng-submit="searchSpotify(searchForm)" name="searchForm" class="search">
+	<label for="searchQuery"><p>Search for an album or playlist to tag the artwork with: </p>
+	</label>
+	<input type="text" id="searchQuery" name="query" placeholder="Search Spotify" ng-model="search.query" />{{search.query}}
+	<input type="submit" class="button" value="Search" />
+</form>

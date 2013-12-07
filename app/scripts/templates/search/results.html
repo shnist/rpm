@@ -1,0 +1,14 @@
+<section class="searchResults">
+
+	<div class="albums" ng-show="results.albums && results.albums.length">
+		<h2>Albums</h2>
+		<ul class="results">
+			<li ng-repeat="album in results.albums">
+				{{$index}}
+				<span>{{album.name}}</span>
+				<button class="tag">Tag</button>
+			</li>
+		</ul>
+	</div>
+
+</section>
