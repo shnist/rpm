@@ -1,5 +1,5 @@
-$light-turquoise: #5fdcbe;
+@import "variables";
 
 .test {
-	color: $light-turquoise;
+	color: $brandYellow;
 }

@@ -23,12 +23,12 @@ spotify.ready(function() {
 		var playlistResult = searchResult.playlists[0];
 		var track = playlistResult.getTracks()[0];
 
-		spotify.player.play(track);
-		spotify.player.seek(198);
-
 		spotify.player.on('player_end_of_track', function (error, player) {
 			console.log(player, error);
 		});
+		spotify.player.play(track);
+		spotify.player.seek(track.duration - 4);
+
 	});
 
 
