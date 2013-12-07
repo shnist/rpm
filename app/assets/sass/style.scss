@@ -1,7 +1,10 @@
 @import "variables";
-
+@import "reset";
 // modules and views
 @import "header";
+@import "footer";
+@import "search";
+@import "typography";
 
 
 *, *:before, *:after {
@@ -21,6 +24,17 @@ body {
 	font-family: sans-serif;
 	background: $brandYellow;
 }
+
+.clear {
+	clear:both;
+}
+
+
+
+
+
+
+
 
 .test {
 	color: $brandYellow;
