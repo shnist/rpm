@@ -11,10 +11,30 @@ body {
 	}
 }
 
+footer {
+	a, p {
+		color:$darkGrey;
+	}
+}
+
 section {
 
 	h1, h2, p, p a, label{
 		color:$darkGrey;
+	}
+
+	p.error {
+		background-color:$errorRed;
+		color:$white;
+	}
+
+	input.error {
+		border:1px solid $errorRed;
+	}
+
+
+	.logInView input {
+		color:$lightGrey;
 	}
 
 	span.tag {
@@ -25,6 +45,16 @@ section {
 	div.artwork {
 		border: 18px solid $white;
 	}
+
+	div.logInView {
+		input[type=submit] {
+				background:$white;
+				color:$darkGrey;
+		}
+		label {
+			background-color:$white;
+		}
+	}	
 
 	ul.results {
 		border-top: 1px solid $darkYellow;

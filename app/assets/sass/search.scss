@@ -26,6 +26,11 @@ section {
 			padding: 2.5rem 0;
 			position:relative;
 
+			p{
+				margin:0;
+				padding:0!important;
+			}
+
 			a.tag {
 				text-transform: uppercase;
 				text-decoration: none;
@@ -39,24 +44,25 @@ section {
 	}
 
 	form.search {
-		padding: 2.8rem 0;
+		padding: 0.8rem 0 2.8 0;
 
 		label {
 			display:block;
 		}
 
 		input {
-			padding: 1rem;
+			padding: 0.7rem;
 			width: 50rem;
 			display:block;
 			border:none;
 			float:left;
-			margin:2rem 0;
+			margin:0 0 2rem 0;
 			color:$darkGrey;
+			text-transform: uppercase;
 		}
 		input.button {
 			float:left;
-			margin:2rem 0;
+			margin:0 0 2rem 0;
 			height:8.6rem;
 			width:8.6rem;
 			border:none;
@@ -71,7 +77,7 @@ section {
 		clear:both;
 	}
 
-	p.cancel {
+	p.cancel {  
 		text-decoration: underline;
 		padding:2rem 0 8.4rem 0;
 	}

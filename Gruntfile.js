@@ -3,7 +3,7 @@ module.exports = function (grunt) {
 
 	grunt.initConfig({
 
-
+		pkg: grunt.file.readJSON('package.json'),
 		jshint: {
 			files: [
 				'Gruntfile.js',
@@ -48,9 +48,9 @@ module.exports = function (grunt) {
 				],
 				tasks: ['jshint', 'concat']
 			},
-			sass: {
-				files: ['assets/sass/*.scss'],
-				tasks: 'sass'
+			css: {
+				files: 'assets/sass/*.scss',
+				tasks: ['sass']
 			}
 		},
 

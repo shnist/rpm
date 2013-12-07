@@ -1,0 +1,37 @@
+section {
+	div.logInView {
+		input {
+			text-transform: uppercase;
+			border:none;
+			display:block;
+			width:30rem;
+			padding: 1rem;
+			margin-top:2rem
+		}
+		p.error {
+			display: inline-block;
+			padding:1rem;
+			margin-top:1.6rem;
+		}
+
+		input[type=checkbox] {
+			visibility: hidden;
+		}
+
+		label {
+			display:block;
+			width: 1em;
+			height: 1em;
+
+		}
+
+
+		input[type=submit] {
+			display:inline-block;
+			width:auto!important;
+			padding: 0.5em 1.3em;
+		}
+
+
+	}
+}
