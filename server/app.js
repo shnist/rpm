@@ -32,12 +32,17 @@ app.configure('development', function () {
     app.use(express.errorHandler());
 });
 
-
 app.get('/', index.load);
 /*app.post('/login', login.index);
 app.get('/search/:term', search.index);
 app.post('/tag', tag.index);
 app.get('/play', play.index);*/
+
+app.get('/home', function (req, res) {
+    res.sendfile('app/home.html', {
+        path: '../'
+    });
+})
 
 server = http.createServer(app);
 server.listen(port, '0.0.0.0');
