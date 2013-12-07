@@ -114,9 +114,9 @@ with multiple camera*. This will need to be done each time the application is st
 In order to be able to use the spotify part of the application you need to create `spotify_login.js` file
 with an object that contains your spotify user name and password. An example is given below:
 
-	exports.user = {
-		username: 'your username',
-		password: 'your password'
+	module.exports = {
+		username: "username",
+		password: "password"
 	};
 
 The file needs to reside in the same place as the Spotify code.
