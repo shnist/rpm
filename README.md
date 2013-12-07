@@ -124,7 +124,7 @@ In order to be able to use the spotify part of the application you need to creat
 with an object that contains your spotify user name and password. An example is given below:
 
 	exports.user = {
-		name: 'your username',
+		username: 'your username',
 		password: 'your password'
 	};
 
