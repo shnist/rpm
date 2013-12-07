@@ -5,7 +5,7 @@ Physicalising music
 ## Set Up
 
 ### NPM
-The following packages need to be installed globaller. You may need to be sudo in order to do this.
+The following packages need to be installed globally. You may need to be sudo in order to do this.
 
 `npm install -g node-gyp`
 
@@ -13,15 +13,6 @@ To install local dependencies simply run `npm install` in the root of the projec
 
 ### Noduino
 To run rpmDuino you need to cd in the /noduino folder and run `node srv.web.js`
-
-### Compiling the lib-spotify library
-* Clone the library onto your machine
-`git clone https://github.com/FrontierPsychiatrist/node-spotify.git lib-spotify`
-* CD into the root of the project
-* Run `node-gyp configure && node-gyp build`
-* This will compile the library to use as a node module. This is located in `/build/Release/`
-* Copy the contents of this folder into a folder called `lib_spotify` into the spotify folder of the project
-
 
 ## Image Matcher
 ImageMatcher is a Spring Boot Java application that provides a RESTful interface to a connected camera and image matching algorithms.
@@ -136,6 +127,7 @@ It implements the "Spotify Web" WebSocket protocol that is used on Spotify's Web
 
 The module has been added as dependency to the package.json, so simply run `npm install` to include it.
 
+You DON'T need an API key for this anymore. Speak to Aaron for credential details.
 
 ## Noduino service
 ### Events
