@@ -34,10 +34,7 @@ angular.module('RPM', imports)
 		});
 
 
-		$routeProvider.when('/capture', {
-			templateUrl: 'scripts/templates/capture/capture.html',
-			controller: 'Capture'
-		});
+		
 
 
 		$routeProvider.when('/login', {
