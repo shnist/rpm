@@ -19,12 +19,19 @@ spotify.ready(function() {
 
 	var search = new spotify.Search('Lady Gaga – A Very Gaga Holiday');
 	search.execute(function (error, searchResult) {
-		console.log(searchResult);
+		//console.log(searchResult);
 		var playlistResult = searchResult.playlists[0];
 		var track = playlistResult.getTracks()[0];
 
 		spotify.player.play(track);
+		spotify.player.seek(198);
+
+		spotify.player.on('player_end_of_track', function (error, player) {
+			console.log(player, error);
+		});
 	});
+
+
 });
 
 spotify.login(login.user.name, login.user.password, true, false);
