@@ -1,6 +1,3 @@
-body {
-	background: $brandYellow;
-}
 
 section {
 
@@ -10,7 +7,6 @@ section {
 		margin-top: 8.4rem;
 		padding:0;
 		text-transform: uppercase;
-		color:$darkGrey;
 
 		&.search {
 			padding-left:4rem;
@@ -21,32 +17,23 @@ section {
 	h2 {
 		margin-top:4rem;
 		text-transform: uppercase;
-		color:$darkGrey;
 	}
 
 	ul.results {
-		border-top: 1px solid $darkYellow;
 		margin-top: 2rem;
 		width:100%;
 		li {
-			border-bottom: 1px solid $darkYellow;
 			padding: 2.5rem 0;
-			color:$darkGrey;
 			position:relative;
 
 			a.tag {
-				background-color: #fff;
 				text-transform: uppercase;
 				text-decoration: none;
-				color:$darkGrey;
 				padding:1rem 3rem;
 				position: absolute;
 				right:0;
 				top:1.5rem;
-				&:hover {
-				background-color: $darkGrey;
-				color:#fff;
-				}
+				
 			}
 		}
 	}
@@ -56,12 +43,11 @@ section {
 
 		label {
 			display:block;
-			color:$darkGrey;
 		}
 
 		input {
 			padding: 1rem;
-			width: 30rem;
+			width: 50rem;
 			display:block;
 			border:none;
 			float:left;
@@ -74,7 +60,7 @@ section {
 			height:8.6rem;
 			width:8.6rem;
 			border:none;
-			background: url("../img/search_icon.svg") no-repeat center $darkGrey;
+			background: url("../img/search_field_icon_simplified.svg") no-repeat center $darkGrey;
 			&:hover {
 				cursor:pointer;
 			}
@@ -88,7 +74,6 @@ section {
 	p.cancel {
 		text-decoration: underline;
 		padding:2rem 0 8.4rem 0;
-		color:$darkGrey;
 	}
 
 }

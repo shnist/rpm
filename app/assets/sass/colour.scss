@@ -1,0 +1,42 @@
+body {
+	background: $brandYellow;
+}
+
+.header {
+	background: $darkGrey;
+	color: $white;
+
+	a {
+		color: $white;
+	}
+}
+
+section {
+
+	h1, h2, p, p a, label{
+		color:$darkGrey;
+	}
+
+	span.tag {
+		background-color:$darkGrey;
+		color:$white;
+	}
+
+	div.artwork {
+		border: 18px solid $white;
+	}
+
+	ul.results {
+		border-top: 1px solid $darkYellow;
+		li {
+			border-bottom: 1px solid $darkYellow;
+			a.tag {
+				background-color:$white;
+				&:hover {
+				background-color: $darkGrey;
+				color:$white;
+				}
+			}
+		}
+	}
+}
