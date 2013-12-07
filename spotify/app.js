@@ -1,37 +1,29 @@
-var spotify = require('./lib_spotify/spotify')( {
-	appkeyFile: './spotify_appkey.key'
-});
-
 var login = require('./spotify_login');
 
-spotify.ready(function() {
-	var playlists;
-	playlists = spotify.getPlaylists();
+var lame = require('lame');
+var Speaker = require('speaker');
+var Spotify = require('spotify-web');
+var uri = process.argv[2] || 'spotify:track:6tdp8sdXrXlPV6AZZN2PE8';
 
+// Spotify credentials...
+var username = login.username;
+var password = login.password;
 
-	var filteredPlaylists = [];
+Spotify.login(username, password, function (err, spotify) {
+  if (err) throw err;
 
-	for (var i = 0; i < playlists.length; i++) {
-		if (playlists[i].name.length > 0) {
-			filteredPlaylists.push(playlists[i]);
-		}
-	}
+  // first get a "Track" instance from the track URI
+  spotify.get(uri, function (err, track) {
+    if (err) throw err;
+    console.log('Playing: %s - %s', track.artist[0].name, track.name);
 
-	var search = new spotify.Search('Lady Gaga – A Very Gaga Holiday');
-	search.execute(function (error, searchResult) {
-		//console.log(searchResult);
-		var playlistResult = searchResult.playlists[0];
-		var track = playlistResult.getTracks()[0];
+    // play() returns a readable stream of MP3 audio data
+    track.play()
+      .pipe(new lame.Decoder())
+      .pipe(new Speaker())
+      .on('finish', function () {
+        spotify.disconnect();
+      });
 
-		spotify.player.on('player_end_of_track', function (error, player) {
-			console.log(player, error);
-		});
-		spotify.player.play(track);
-		spotify.player.seek(track.duration - 4);
-
-	});
-
-
+  });
 });
-
-spotify.login(login.user.name, login.user.password, true, false);

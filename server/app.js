@@ -7,7 +7,7 @@ var express = require('express'),
     appPath = __dirname + '/../app',
     server;
 
-var index = require('./routes/index');
+var spotify = require('./routes/spotify');
 /*
     login = require('routes/login'),
     search = require('routes/search'),
@@ -32,7 +32,8 @@ app.configure('development', function () {
     app.use(express.errorHandler());
 });
 
-app.get('/', index.load);
+app.get('/spotify', spotify.login);
+
 /*app.post('/login', login.index);
 app.get('/search/:term', search.index);
 app.post('/tag', tag.index);
