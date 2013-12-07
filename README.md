@@ -11,11 +11,6 @@ The following packages need to be installed globaller. You may need to be sudo i
 
 To install local dependencies simply run `npm install` in the root of the project.
 
-### Lib spotify
-If you use `brew` then you can install lib-spotify pretty easily using:
-
-`brew install libspotify`
-
 ### Noduino
 To run rpmDuino you need to cd in the /noduino folder and run `node srv.web.js`
 
@@ -135,17 +130,24 @@ with an object that contains your spotify user name and password. An example is 
 
 The file needs to reside in the same place as the Spotify code.
 
+### Spotify Web
+We have settled on the following spotify api - https://github.com/TooTallNate/node-spotify-web.git
+It implements the "Spotify Web" WebSocket protocol that is used on Spotify's Web UI.
+
+The module has been added as dependency to the package.json, so simply run `npm install` to include it.
+
+
 ## Noduino service
 ### Events
 The arduino provides to forms of functionality, a toggle switch (to dictate whether the device is on play or record) and a button to trigger the action.
 
 #### Toggle Switch
 
-In the rpmDuino file events are set for both, firstly the toogle switch - set on pin 10 of the arduino - listens for a change event, if the change event is fired a global variable of toggleSwitch is updated. 
-		
+In the rpmDuino file events are set for both, firstly the toogle switch - set on pin 10 of the arduino - listens for a change event, if the change event is fired a global variable of toggleSwitch is updated.
+
 		board.withButton({pin: 10}, function(err, Button) {
             Button.on('change', function(B) {
-                
+
                 if(B.pushed === true){
                   toggleSwitch = false;
                 }else{
@@ -176,4 +178,4 @@ For the button we listen to the Push event
 
 if the event is fired and the var of toggleSwitch is true we know to call the play part of the api, otherwise we start the record route.
 
-As default we assume False on toggleSwitch since we assume no record has been trained.	
+As default we assume False on toggleSwitch since we assume no record has been trained.
