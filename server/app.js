@@ -3,11 +3,13 @@
 var express = require('express'),
     http = require('http'),
     app = module.exports = express(),
-    port = 3000,
+    port = 3010,
     appPath = __dirname + '/../app',
     server;
 
 var spotify = require('./routes/spotify');
+var noduino = require('./routes/noduino');
+
 /*
     login = require('routes/login'),
     search = require('routes/search'),
@@ -25,14 +27,17 @@ app.configure(function() {
         httpOnly: true,
         maxAge: 60000 * 60 * 24 * 30
     }));
-    app.use(express.static(appPath));
+    //app.use(express.static(appPath));
 });
 
 app.configure('development', function () {
     app.use(express.errorHandler());
 });
 
-app.get('/spotify', spotify.login);
+app.get('/api/spotify', spotify.checkLogIn);
+app.post('/login', spotify.login);
+app.get('/search', spotify.search);
+app.get('/noduino', noduino.index);
 
 /*app.post('/login', login.index);
 app.get('/search/:term', search.index);
@@ -43,7 +48,12 @@ app.get('/home', function (req, res) {
     res.sendfile('app/home.html', {
         path: '../'
     });
-})
+});
+
+app.get('/', function (request, response) {
+    console.log('index')
+    response.redirect(301, 'http://localhost:8086');
+});
 
 server = http.createServer(app);
 server.listen(port, '0.0.0.0');
