@@ -1,5 +1,17 @@
 @import "variables";
 
+// modules and views
+@import "header";
+
+
+
+html {
+    font-size: 62.5%;
+}
+body {
+	font-size: 1.4rem;
+}
+
 .test {
 	color: $brandYellow;
 }
