@@ -27,7 +27,7 @@ app.configure(function() {
         httpOnly: true,
         maxAge: 60000 * 60 * 24 * 30
     }));
-    //app.use(express.static(appPath));
+    app.use(express.static(appPath));
 });
 
 app.configure('development', function () {
@@ -45,13 +45,19 @@ app.post('/tag', tag.index);
 app.get('/play', play.index);*/
 
 app.get('/home', function (req, res) {
-    res.sendfile('app/home.html', {
+    var state = req.query.state;
+    var url = 'app/home.html';
+
+    if (state !== undefined) {
+        url += '?state=' + state.toString();
+    }
+
+    res.sendfile(url, {
         path: '../'
     });
 });
 
 app.get('/', function (request, response) {
-    console.log('index')
     response.redirect(301, 'http://localhost:8086');
 });
 

@@ -1,12 +1,12 @@
 define(function() {
   function Example3() {
-    
+
   }
-  
+
   Example3.handle = function() {
-    
+
     require(['scripts/libs/Noduino.js', 'scripts/libs/Noduino.Socket.js', 'scripts/libs/Logger.js'], function(NoduinoObj, Connector, Logger) {
-      
+
       var Noduino = new NoduinoObj({debug: false, host: 'http://localhost:8090'}, Connector, Logger);
       var toggleSwitch = false; //assuming true = "play" & false = "capture"
       var ajaxCall = function(urlString, successFunction, errorFunction){
@@ -26,7 +26,7 @@ define(function() {
       };
 
       //button to trigger an action
-      Noduino.connect(function(err, board) {   
+      Noduino.connect(function(err, board) {
           board.withButton({pin: 6}, function(err, Button) {
             //i is used for debugging
             var i = 0;
@@ -35,7 +35,7 @@ define(function() {
             var url;
 
             Button.on('push', function(B) {
-                url = 'watevadaurlizblud.html';
+                url = 'http://localhost:3010/noduino';
                 success = function(){
                   console.log('do some shit on success');
                 };
@@ -46,11 +46,13 @@ define(function() {
                 switch(toggleSwitch){
                   case true :
                     console.log('pin 6 & start playing', i++);
-                    ajaxCall(url, success, error);
+                    window.location = url + '?state=true';
+                    //ajaxCall(url + '?state=true', success, error);
                   break;
                   case false :
                     console.log('pin 6 & start recording', i++);
-                    ajaxCall(url, success, error);
+                    window.location = url + '?state=false';
+                    //ajaxCall(url + '?state=false', success, error);
                   break
                 }
 
@@ -64,7 +66,7 @@ define(function() {
             var i = 0;
 
             Button.on('change', function(B) {
-                
+
                 if(B.pushed === true){
                   toggleSwitch = false;
                   console.log('event should be true', B.pushed);
@@ -78,8 +80,8 @@ define(function() {
           });
       });
     });
-    
+
   };
-  
+
   return Example3;
 });
