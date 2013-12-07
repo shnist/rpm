@@ -7,6 +7,13 @@ var express = require('express'),
     appPath = __dirname + '/../app',
     server;
 
+var index = require('./routes/index');
+/*
+    login = require('routes/login'),
+    search = require('routes/search'),
+    tag = require('routes/tag'),
+    play = require('routes/play');
+*/
 app.configure(function() {
     app.use(express.favicon());
     app.use(express.logger('dev'));
@@ -24,6 +31,13 @@ app.configure(function() {
 app.configure('development', function () {
     app.use(express.errorHandler());
 });
+
+
+app.get('/', index.load);
+/*app.post('/login', login.index);
+app.get('/search/:term', search.index);
+app.post('/tag', tag.index);
+app.get('/play', play.index);*/
 
 server = http.createServer(app);
 server.listen(port, '0.0.0.0');
