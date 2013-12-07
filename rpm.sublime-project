@@ -3,6 +3,11 @@
 	[
 		{
 			"path": "/home/aaron/Sites/rpm"
+		},
+		{
+			"path":	"/Users/fabera/Sites/rpm",
+			"folder_exclude_patterns": [".sass-cache", "node_modules"],
+			"file_exclude_patterns": ["*.css"]
 		}
 	]
 }
