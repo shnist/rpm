@@ -2,7 +2,7 @@ module.exports = function (grunt) {
 
 
 	grunt.initConfig({
-		
+
 
 		jshint: {
 			files: [
@@ -52,8 +52,14 @@ module.exports = function (grunt) {
 				files: ['assets/sass/*.scss'],
 				tasks: 'sass'
 			}
-		}
+		},
 
+		// starts the dev server
+		open : {
+			dev : {
+				path: 'http://localhost:3000/'
+			}
+		}
 
 	});
 
@@ -62,7 +68,19 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-open');                   // Open browser when server has been created
 
 
-	grunt.registerTask('default', ['jshint', 'concat', 'sass']);
+	//Register tasks!
+	grunt.registerTask('server', 'Start a custom web server', function() {
+		grunt.log.writeln('Started web server on port 3000');
+		require('./server/app.js');
+	});
+
+	//run a web server and run the watch command.
+	grunt.registerTask('default', ['build', 'server', 'open:dev', 'watch']);
+
+	grunt.registerTask('build', ['jshint', 'concat', 'sass']);
+
+	//grunt.registerTask('default', ['jshint', 'concat', 'sass']);
 };
