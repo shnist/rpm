@@ -84,14 +84,18 @@ var SpotifyWrapper = {
 			playlists.push(playlist);
 		}
 
-		console.log(data.result);
 		for (var j = 0; j < data.result.albums[0].album.length; j++) {
-			/*var album = {
-				uri: data.result.albums[0].album[j].uri.toString(),
-				name: data.result.albums[0].album[j].name.toString()
-			};*/
+			if (data.result.albums[0].album[j]['album-type'].toString() === 'album') {
+				console.log(data.result.albums[0].album[j]);
 
-			//albums.push(album);
+				var album = {
+					name: data.result.albums[0].album[j].name.toString(),
+					artist: data.result.albums[0].album[j]['artist-name'].toString(),
+					uri: SpotifyPlayer.gid2uri('album', data.result.albums[0].album[j].id.toString()),
+				};
+
+				albums.push(album);
+			}
 		}
 
 		combinedAlbumsPlaylists.playlists = playlists;
