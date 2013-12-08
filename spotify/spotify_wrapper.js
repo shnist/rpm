@@ -88,12 +88,11 @@ var SpotifyWrapper = {
 
 		for (var j = 0; j < data.result.albums[0].album.length; j++) {
 			if (data.result.albums[0].album[j]['album-type'].toString() === 'album') {
-				console.log(data.result.albums[0].album[j]);
 
 				var album = {
 					name: data.result.albums[0].album[j].name.toString(),
 					artist: data.result.albums[0].album[j]['artist-name'].toString(),
-					uri: SpotifyPlayer.gid2uri('album', data.result.albums[0].album[j].id.toString()),
+					uri: SpotifyPlayer.id2uri('album', data.result.albums[0].album[j].id.toString()),
 				};
 
 				albums.push(album);
@@ -128,7 +127,7 @@ var SpotifyWrapper = {
 		}
 	},
 	playAlbum: function (uri) {
-		this.context.get('spotify:album:7u6zL7kqpgLPISZYXNTgYk', function (error, album) {
+		this.context.get(uri, function (error, album) {
 			if (error) {
 				throw error;
 			}
