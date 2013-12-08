@@ -112,7 +112,9 @@ exports.play = function (request, response) {
 				response.send(message);
 			} else {
 				response.send({
-					status: 'playing!'
+					status: 'playing',
+					track: message.track,
+					artist: message.artist
 				});
 			}
 		});
@@ -120,8 +122,11 @@ exports.play = function (request, response) {
 	} else {
 		response.status = 200;
 		response.send({
+			status: 'error',
 			connected: false,
-			error: 'Not logged in'
+			error: {
+				message: 'Not logged in'
+			}
 		});
 	}
 };

@@ -152,7 +152,7 @@ var SpotifyWrapper = {
 						track: track.name
 					});
 
-					console.log('Playing: %s - %s', track.artist[0].name, track.name);
+					//console.log('Playing: %s - %s', track.artist[0].name, track.name);
 
 					track.play().on('error', function (err) {
 						console.error(err.stack || err);
@@ -191,7 +191,7 @@ var SpotifyWrapper = {
 						track: track.name
 					});
 
-					console.log('Playing: %s - %s', track.artist[0].name, track.name);
+					//console.log('Playing: %s - %s', track.artist[0].name, track.name);
 
 					track.play().on('error', function (err) {
 						console.error(err.stack || err);
