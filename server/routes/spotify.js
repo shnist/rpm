@@ -70,15 +70,19 @@ exports.search = function (request, response) {
 		}
 
 		spotify.search(request.query.q, function (message) {
-			console.log(message);
-
 			response.status = 200;
 			response.send({
-				imageId: request.query.image,
-				playlists: message.playlists,
-				albums: message.albums
+				spotify: {
+					query: request.query.q,
+					image: request.query.image,
+					results: {
+						playlists: message.playlists,
+						albums: message.albums
+					}
+				}
 			});
 		});
+
 	} else {
 		response.status = 200;
 		response.send({
