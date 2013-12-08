@@ -40,6 +40,12 @@ angular.module('RPM', imports)
 		});
 
 
+		$routeProvider.when('/identify', {
+			templateUrl: 'scripts/templates/capture/identify.html',
+			controller: 'Identify'
+		});
+
+
 		$routeProvider.when('/', {
 			templateUrl: 'scripts/templates/user/user.html',
 			controller: 'User'

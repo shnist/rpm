@@ -9,8 +9,8 @@ angular.module('RPM.directives')
 			link: function (scope, elem, attrs, ctrl) {
 
 				var changeCamera = function () {
-					scope.changeCamera().then(function (data) {
-						if(data.status === 'success') {
+					scope.changeCamera().then(function (res) {
+						if(res.data.status === 'success') {
 							saveImage();
 						}
 					});
@@ -40,7 +40,12 @@ angular.module('RPM.directives')
 					scope.getImage();
 				};
 
-				changeCamera();
+				if (window.location.pathname.indexOf('capture') > -1) {
+					saveImage();
+				} else {
+					getImage();
+				}
+				//changeCamera();
 
 			}
 		};

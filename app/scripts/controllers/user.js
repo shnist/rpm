@@ -3,6 +3,13 @@ angular.module('RPM.controllers')
 	.controller('User', ['$scope', '$location', 'UserService', function ($scope, $location, UserService) {
 
 
+		var param = window.location.search.split('?')[1];
+
+		if (param !== undefined && param.indexOf('true') > -1) {
+		$location.path('/identify');
+		}
+
+
 		$scope.connected = false;
 
 

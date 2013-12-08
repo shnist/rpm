@@ -35,7 +35,7 @@ define(function() {
             var url;
 
             Button.on('push', function(B) {
-                url = 'http://localhost:3010/noduino';
+                url = 'http://localhost:3010/';
                 success = function(){
                   console.log('do some shit on success');
                 };

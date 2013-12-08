@@ -15,7 +15,7 @@ angular.module('RPM.services')
 
 
 		this.saveImage = function () {
-			return $http.get(url + '/snap').then(function (res) {
+			return $http.get(url + '/snap', { cache: false }).then(function (res) {
 
 				if (res.status === 200 && res.data.image) {
 					delete json.error;
@@ -26,11 +26,15 @@ angular.module('RPM.services')
 			});
 		};
 
+
 		this.changeCamera = function (cameraId) {
-			return $http.post(url + '/camera', cameraId).then(function (res) {
+			console.log('change camera', cameraId);
+			return $http.post(url + '/camera?id=' + cameraId).then(function (res) {
+				console.log('change camera res', res);
 				return res;
 			});
-		}
+		};
+
 
 		this.getImage = function () {
 			return $http.get(url + '/identify', { cache: false }).then(function (res) {

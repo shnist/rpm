@@ -25,8 +25,8 @@ angular.module('RPM.controllers')
 		};
 
 		$scope.changeCamera = function () {
-			return CaptureService.changeCamera(1);
-		}
+			return CaptureService.changeCamera(0);
+		};
 
 		$scope.tagImage = function () {
 
@@ -37,7 +37,7 @@ angular.module('RPM.controllers')
 
 			data.id = $scope.states.image;
 			data.artist = this.album.artist;
-			data.album = this.album.name;
+			data.album = this.album.uri;
 
 			CaptureService.tag(data).then(function (res) {
 				console.log('tagging response', res);

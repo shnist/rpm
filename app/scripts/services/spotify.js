@@ -3,7 +3,10 @@ angular.module('RPM.services')
 
 
 		this.play = function (uri) {
-			return $http('/play?uri=' + uri).then(function (res) {
+
+			var encoded = encodeURI('/play?uri=' + uri);
+
+			return $http.get(encoded).then(function (res) {
 				if (res.data.status === 'error') return false;
 
 				return res;
