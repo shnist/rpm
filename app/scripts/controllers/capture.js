@@ -39,12 +39,10 @@ angular.module('RPM.controllers')
 
 		$scope.searchSpotify = function (form) {
 
-			var data = {
-				q: form.query.$viewValue,
-				image: $scope.imageId
-			};
+			var query = form.query.$viewValue;
+			var image = $scope.states.image;
 
-			SearchService.search(data).then(function (res) {
+			SearchService.search(query, image).then(function (res) {
 
 				var data = res.data;
 

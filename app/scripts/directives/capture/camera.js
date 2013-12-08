@@ -6,7 +6,7 @@ angular.module('RPM.directives')
 			replace: true,
 			templateUrl: 'scripts/templates/capture/camera.html',
 			scope: '=',
-			link: function (scope, elem, attrs) {
+			link: function (scope, elem, attrs, ctrl) {
 
 				var createImage = function (data) {
 					elem.find('img')[0].src = data;

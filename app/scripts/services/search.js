@@ -2,8 +2,8 @@ angular.module('RPM.services')
 
 	.service('SearchService', ['$http', function ($http) {
 
-		this.search = function (params) {
-			return $http.post('/stubs/search', params).then(function (res) {
+		this.search = function (query, image) {			
+			return $http.get('/search?q=' + query + '&image=' + image).then(function (res) {
 				return res;
 			});
 		};

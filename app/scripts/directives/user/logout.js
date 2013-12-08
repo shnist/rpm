@@ -1,14 +1,11 @@
 angular.module('RPM.directives')
-
-	.directive('login', function () {
+	.directive('logout', function () {
 		return {
 			restrict: 'E',
 			replace: true,
-			templateUrl: 'scripts/templates/user/login.html',
 			scope: '=',
+			templateUrl: 'scripts/templates/user/logout.html',
 			link: function (scope, elem, attrs) {
-
-				console.log('scope login', scope);
 
 			}
 		};

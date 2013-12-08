@@ -41,7 +41,7 @@ angular.module('RPM', imports)
 
 
 		$routeProvider.when('/', {
-			templateUrl: 'scripts/templates/user/login.html',
+			templateUrl: 'scripts/templates/user/user.html',
 			controller: 'User'
 		});
 
