@@ -3,17 +3,13 @@
 var express = require('express'),
     http = require('http'),
     app = module.exports = express(),
-    port = 3000,
+    port = 3010,
     appPath = __dirname + '/../app',
     server;
 
 var spotify = require('./routes/spotify');
-/*
-    login = require('routes/login'),
-    search = require('routes/search'),
-    tag = require('routes/tag'),
-    play = require('routes/play');
-*/
+var noduino = require('./routes/noduino');
+
 app.configure(function() {
     app.use(express.favicon());
     app.use(express.logger('dev'));
@@ -32,21 +28,36 @@ app.configure('development', function () {
     app.use(express.errorHandler());
 });
 
-app.get('/spotify', spotify.login);
-
-/*app.post('/login', login.index);
-app.get('/search/:term', search.index);
-app.post('/tag', tag.index);
-app.get('/play', play.index);*/
+app.get('/api/spotify', spotify.checkLogIn);
+app.post('/login', spotify.login);
+app.get('/search', spotify.search);
+app.get('/noduino', noduino.index);
+app.get('/play', spotify.play);
 
 app.get('/home', function (req, res) {
-    res.sendfile('app/home.html', {
+    var state = req.query.state;
+    var url = 'app/home.html';
+
+    if (state !== undefined) {
+        url += '?state=' + state.toString();
+    }
+
+    res.sendfile(url, {
         path: '../'
     });
-})
+});
+
+app.get('/', function (request, response) {
+    response.redirect(301, 'http://localhost:8086');
+});
+
+app.post('/stubs/search', function (req, res) {
+    res.sendfile('app/stubs/search.json', {
+        path: '../'
+    });
+});
 
 server = http.createServer(app);
 server.listen(port, '0.0.0.0');
 
 console.log('Listening to port ', port);
-

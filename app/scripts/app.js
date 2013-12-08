@@ -28,20 +28,20 @@ angular.module('RPM', imports)
 		$locationProvider.html5Mode(true);
 
 
-		$routeProvider.when('/', {
-			templateUrl: 'scripts/templates/rpm.html',
-			controller: 'User'
-		});
-
-
 		$routeProvider.when('/capture', {
 			templateUrl: 'scripts/templates/capture/capture.html',
 			controller: 'Capture'
 		});
 
 
-		$routeProvider.when('/login', {
-			templateUrl: 'scripts/templates/user/login.html',
+		$routeProvider.when('/results', {
+			templateUrl: 'scripts/templates/search/results.html',
+			controller: 'Capture'
+		});
+
+
+		$routeProvider.when('/', {
+			templateUrl: 'scripts/templates/user/user.html',
 			controller: 'User'
 		});
 

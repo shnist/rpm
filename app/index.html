@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="RPM">
 	<head>
 		<title>RPM: Physical music in a digital age</title>
+
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+
 		<link rel="stylesheet" href="assets/css/style.css">
+
 		<script type="text/javascript" src="//use.typekit.net/rap7swj.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+		
+		<script src="assets/lib/angular.js"></script>
+		<script src="assets/lib/angular-route.js"></script>
+		<script src="assets/lib/angular-resource.js"></script>
+		<script src="dist/RPM.js"></script>
+
 	</head>
 	<body>
 		<div class="header">
@@ -16,8 +27,12 @@
 				<p><a href="/">Log out</a></p>
 			</div>
 			<br class="clear"/>
+
+			<a href="/capture">Capture</a>
 		</div>
 		<!-- views go here! -->
+		<div ng-view></div>
+
 		<footer>
 			<p>
 				Created by <a href="http://www.digitaslbi.com/global/">DigitasLBi Labs</a> 2013

@@ -1,0 +1,28 @@
+<section class="searchResults">
+
+	<h1>
+		<span ng-show="states.results.albums.length || states.results.playlists.length">Showing results for "{{states.query}}"</span>
+		<span ng-show="!states.results.albums.length && !states.results.playlists.length">No results for "{{states.query}}"</span>
+	</h1>
+
+	<div class="albums" ng-show="states.results !== null && states.results.albums.length">
+		<h2>Albums</h2>
+		<ul class="results">
+			<li ng-repeat="album in states.results.albums">
+				<span>{{album.name}}</span>
+				<button ng-click="tagImage()" class="tag" name="tag" data-id="{{states.image}}" data-album="{{album.name}}" data-artist="{{album.artist}}">Tag</button>
+			</li>
+		</ul>
+	</div>
+
+	<div class="playlists" ng-show="states.results !== null && states.results.playlists.length">
+		<h2>Albums</h2>
+		<ul class="results">
+			<li ng-repeat="playlist in states.results.playlists">
+				<span>{{playlist.name}}</span>
+				<button ng-click="tagImage()" class="tag" name="tag" data-id="{{states.image}}" data-album="{{playlist.name}}" data-artist="{{playlist.name}}">Tag</button>
+			</li>
+		</ul>
+	</div>
+
+</section>
