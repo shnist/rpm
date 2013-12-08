@@ -2,6 +2,30 @@ body {
 	background: $brandYellow;
 }
 
+.landing {
+	background: $darkGrey;
+	border-top:1px solid $lightGrey;
+
+	p, a , h2{
+		color:$white;
+	}
+	li:nth-child(1) {
+		background:$black;
+	}
+	li:nth-child(2) {
+		background:$darkerGrey;
+	}
+	li:nth-child(3) {
+		background:$brandYellow;
+		p {
+			color:$darkGrey;
+		}
+	}
+	h1 {
+		color:$white;
+	}
+}
+
 .header {
 	background: $darkGrey;
 	color: $white;

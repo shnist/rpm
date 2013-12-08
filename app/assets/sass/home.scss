@@ -1,0 +1,47 @@
+section.landing {
+	text-align: center;
+	padding:0;
+
+	h1 {
+		margin:0;
+		padding-top:8.4rem;
+	}
+
+	div.fullscreen p {
+		padding: 6.5rem 0 4rem 0;
+	}
+
+	p {
+		line-height:2rem;
+	}
+
+	ul p {
+		padding: 3rem 1.5rem 2rem 1.5rem;
+	}
+
+	h2 {
+		margin-top:0.5rem;
+	}
+
+	div.go {
+		margin:0 auto 3.5rem auto;
+		&:hover {
+			cursor:pointer;
+		}
+	}
+
+	span.img {
+		margin:0 auto;
+	}
+
+	ul{
+		li {
+			width:33.3%;
+			float:left;
+			display: block;
+			padding:3rem;
+			height:100%;
+		}
+	}
+
+}
