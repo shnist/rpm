@@ -19,7 +19,7 @@ angular.module('RPM.directives')
 
 						if (data.capture) {
 							createImage(data.capture.image);
-							scope.imageId = data.capture.id;
+							scope.states.image = data.capture.id;
 						}
 
 					});

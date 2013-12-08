@@ -10,9 +10,6 @@ angular.module('RPM.controllers')
 		};
 
 
-		$scope.imageId = null;
-
-
 		$scope.saveImage = function () {
 			return CaptureService.saveImage();
 		};
@@ -20,6 +17,23 @@ angular.module('RPM.controllers')
 
 		$scope.getImage = function () {
 			return CaptureService.getImage();
+		};
+
+
+		$scope.tagImage = function (tag) {
+
+			var temp;
+			var data;
+
+			// if (tag.album) temp = tag.album;
+			// if (tag.playlist) temp = tag.playlist;
+
+			data.id = $scope.states.image;
+			data.artist = tag.album.artist;
+			data.album = tag.album.name;
+
+			CaptureService.tag(data);
+
 		};
 
 

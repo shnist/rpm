@@ -37,4 +37,11 @@ angular.module('RPM.services')
 		};
 
 
+		this.tag = function (params) {
+			return $http.post(url + '/update', params).then(function (res) {
+				return res;
+			});
+		};
+
+
 	}]);

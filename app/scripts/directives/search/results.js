@@ -6,7 +6,11 @@ angular.module('RPM.directives')
 			scope: '=',
 			templateUrl: 'scripts/templates/search/results.html',
 			link: function (scope, elem, attrs) {
-				console.log('results scope', scope);
+
+				scope.tagImage = function () {
+					console.log('tag image', this);
+				};
+
 			}
 		};
 	});

@@ -10,7 +10,7 @@
 		<ul class="results">
 			<li ng-repeat="album in states.results.albums">
 				<span>{{album.name}}</span>
-				<button class="tag">Tag</button>
+				<button ng-click="tagImage()" class="tag" name="tag" data-id="{{states.image}}" data-album="{{album.name}}" data-artist="{{album.artist}}">Tag</button>
 			</li>
 		</ul>
 	</div>
@@ -20,7 +20,7 @@
 		<ul class="results">
 			<li ng-repeat="playlist in states.results.playlists">
 				<span>{{playlist.name}}</span>
-				<button class="tag">Tag</button>
+				<button ng-click="tagImage()" class="tag" name="tag" data-id="{{states.image}}" data-album="{{playlist.name}}" data-artist="{{playlist.name}}">Tag</button>
 			</li>
 		</ul>
 	</div>
