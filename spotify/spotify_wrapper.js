@@ -35,7 +35,7 @@ var SpotifyWrapper = {
 		return this.context.connected;
 	},
 	getUserName: function () {
-		return 'aaronfaber';
+		return this.context.username;
 	},
 	search: function (query, callback) {
 		this.searchCallback = callback;
