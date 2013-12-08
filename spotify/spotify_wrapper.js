@@ -135,8 +135,8 @@ var SpotifyWrapper = {
 			// first get the Track instances for each disc
 			var tracks = [];
 			album.disc.forEach(function (disc) {
+				if (!Array.isArray(disc.track)) return;
 
-			if (!Array.isArray(disc.track)) return;
 				tracks.push.apply(tracks, disc.track);
 			});
 
@@ -168,12 +168,42 @@ var SpotifyWrapper = {
 		});
 	},
 	playPlaylist: function (uri) {
-		this.context.get(uri, function (error, playlist) {
-			if (error) {
-				throw error;
+		this.context.playlist(uri, function (err, playlist) {
+			if (err) throw err;
+
+			var tracks = [];
+
+			playlist.contents.items.forEach(function (track) {
+				tracks.push(track);
+			});
+
+			function next () {
+				var track = tracks.shift();
+				if (!track) return spotify.disconnect();
+
+				self.context.get(track.uri, function (err, track) {
+					console.log(track);
+
+					if (err) throw err;
+
+					self.playCallback({
+						artist: track.artist[0].name,
+						track: track.name
+					});
+
+					console.log('Playing: %s - %s', track.artist[0].name, track.name);
+
+					track.play().on('error', function (err) {
+						console.error(err.stack || err);
+						next();
+					})
+					.pipe(new lame.Decoder())
+					.pipe(new Speaker())
+					.on('finish', next);
+				});
 			}
 
-			console.log(playlist);
+			next();
 		});
 	}
 };
