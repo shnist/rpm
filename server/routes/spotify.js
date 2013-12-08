@@ -15,8 +15,11 @@ exports.checkLogIn = function (request, response) {
 	} else {
 		response.status = 200;
 		response.send({
+			status: 'error',
 			connected: false,
-			error: 'Not logged in'
+			error: {
+				message: 'Not logged in'
+			}
 		});
 	}
 };
@@ -25,14 +28,20 @@ exports.login = function (request, response) {
 	if (!request.body.username) {
 		response.status = 200;
 		response.send({
-			error: 'Username required'
+			status: 'error',
+			error: {
+				message: 'Username required'
+			}
 		});
 	}
 
 	if(!request.body.password) {
 		response.status = 200;
 		response.send({
-			error: 'Password required'
+			status: 'error',
+			error: {
+				message: 'Password required'
+			}
 		});
 	}
 
@@ -44,8 +53,11 @@ exports.login = function (request, response) {
 		if (error) {
 			response.status = 200;
 			response.send({
+				status: 'error',
 				connected: false,
-				error: message.error.toString()
+				error: {
+					message: message.error.toString()
+				}
 			});
 		} else {
 			response.status = 200;
@@ -102,7 +114,10 @@ exports.play = function (request, response) {
 		if (request.query.uri === '' || request.query.uri === undefined) {
 			response.status = 200;
 			response.send({
-				error: 'Album or playlist uri cannot be empty or undefined'
+				status: 'error',
+				error: {
+					message: 'Album or playlist uri cannot be empty or undefined'
+				}
 			});
 		}
 
