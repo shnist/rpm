@@ -3,5 +3,9 @@ require(["jquery", p + "dropdown.js", p + "prettify.js", "./scripts/examples.js"
   $(document).ready(function(e) {
     prettyPrint();
     examples.bind();
+    console.log('home');
+    var trigger = $('#e3-buttonConnect');
+    console.log('home', trigger);
+    trigger.click();
   });
 });
