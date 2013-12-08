@@ -55,8 +55,6 @@ var SpotifyWrapper = {
 		}
 
 		pubsub.subscribe('spotify:search', function (query) {
-			console.log(query);
-
 			spotify.search(query.term, function (error, xml) {
 				if (error) {
 					throw error;
@@ -65,12 +63,41 @@ var SpotifyWrapper = {
 				var parser = new xml2js.Parser();
 
 				parser.on('end', function (data) {
-					console.log(data.result.playlists[0].playlist);
+					self.processSearchResults(data);
 				});
 
 				parser.parseString(xml);
 			});
 		});
+	},
+	processSearchResults: function (data) {
+		var combinedAlbumsPlaylists = {};
+		var playlists = [];
+		var albums = [];
+
+		for (var i = 0; i < data.result.playlists[0].playlist.length; i++) {
+			var playlist = {
+				uri: data.result.playlists[0].playlist[i].uri.toString(),
+				name: data.result.playlists[0].playlist[i].name.toString()
+			};
+
+			playlists.push(playlist);
+		}
+
+		console.log(data.result);
+		for (var j = 0; j < data.result.albums[0].album.length; j++) {
+			/*var album = {
+				uri: data.result.albums[0].album[j].uri.toString(),
+				name: data.result.albums[0].album[j].name.toString()
+			};*/
+
+			//albums.push(album);
+		}
+
+		combinedAlbumsPlaylists.playlists = playlists;
+		combinedAlbumsPlaylists.albums = albums;
+
+		this.searchCallback(combinedAlbumsPlaylists);
 	}
 };
 

@@ -72,10 +72,12 @@ exports.search = function (request, response) {
 		spotify.search(request.query.q, function (message) {
 			console.log(message);
 
-/*			response.status = 200;
+			response.status = 200;
 			response.send({
-				imageId: request.query.image
-			});*/
+				imageId: request.query.image,
+				playlists: message.playlists,
+				albums: message.albums
+			});
 		});
 	} else {
 		response.status = 200;
