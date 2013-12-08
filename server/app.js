@@ -7,8 +7,8 @@ var express = require('express'),
     appPath = __dirname + '/../app',
     server;
 
-var spotify = require('./routes/spotify');
-var noduino = require('./routes/noduino');
+//var spotify = require('./routes/spotify');
+//var noduino = require('./routes/noduino');
 
 /*
     login = require('routes/login'),
@@ -34,10 +34,10 @@ app.configure('development', function () {
     app.use(express.errorHandler());
 });
 
-app.get('/api/spotify', spotify.checkLogIn);
-app.post('/login', spotify.login);
-app.get('/search', spotify.search);
-app.get('/noduino', noduino.index);
+// app.get('/api/spotify', spotify.checkLogIn);
+// app.post('/login', spotify.login);
+// app.get('/search', spotify.search);
+// app.get('/noduino', noduino.index);
 
 /*app.post('/login', login.index);
 app.get('/search/:term', search.index);
@@ -61,8 +61,13 @@ app.get('/', function (request, response) {
     response.redirect(301, 'http://localhost:8086');
 });
 
+app.post('/stubs/search', function (req, res) {
+    res.sendfile('app/stubs/search.json', {
+        path: '../'
+    });
+});
+
 server = http.createServer(app);
 server.listen(port, '0.0.0.0');
 
 console.log('Listening to port ', port);
-

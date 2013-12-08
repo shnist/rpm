@@ -3,6 +3,13 @@ angular.module('RPM.controllers')
 	.controller('Capture', ['$scope', 'CaptureService', 'SearchService', function ($scope, CaptureService, SearchService) {
 
 
+		$scope.states = {
+			query: null,
+			image: null,
+			results: null
+		};
+
+
 		$scope.imageId = null;
 
 
@@ -23,7 +30,16 @@ angular.module('RPM.controllers')
 				image: $scope.imageId
 			};
 
-			console.log(data);
+			SearchService.search(data).then(function (res) {
+
+				var data = res.data;
+
+				if (data.spotify.results) {
+					$scope.states.query = data.spotify.query;
+					$scope.states.results = data.spotify.results;
+				}
+
+			});
 
 		};
 

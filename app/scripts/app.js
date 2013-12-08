@@ -34,6 +34,12 @@ angular.module('RPM', imports)
 		});
 
 
+		$routeProvider.when('/results', {
+			templateUrl: 'scripts/templates/search/results.html',
+			controller: 'Capture'
+		});
+
+
 		$routeProvider.when('/', {
 			templateUrl: 'scripts/templates/user/login.html',
 			controller: 'User'

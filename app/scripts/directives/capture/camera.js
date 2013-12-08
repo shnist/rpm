@@ -32,7 +32,6 @@ angular.module('RPM.directives')
 				};
 
 				saveImage();
-				console.log(scope);
 
 			}
 		};

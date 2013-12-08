@@ -1,10 +1,13 @@
 <section class="capture">
-	<h1>Capture</h1>
 
-	<h2>Search</h2>
-	<search></search>
+	<div class="search" ng-show="states.results === null">
+		<h1>Artwork captured</h1>
 
-	<h2>Camera</h2>
-	<camera></camera>
+		<search></search>
+
+		<camera></camera>
+	</div>
+
+	<results ng-show="states.results !== null"></results>
 
 </section>
