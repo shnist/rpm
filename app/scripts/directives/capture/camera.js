@@ -18,6 +18,9 @@ angular.module('RPM.directives')
 					scope.saveImage().then(function (data) {
 
 						if (data.capture) {
+
+							scope.imageCapture = data.capture;
+
 							createImage(data.capture.image);
 							scope.states.image = data.capture.id;
 						}
