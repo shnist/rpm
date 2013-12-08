@@ -57,7 +57,7 @@ module.exports = function (grunt) {
 		// starts the dev server
 		open : {
 			dev : {
-				path: 'http://localhost:3000/'
+				path: 'http://localhost:3010/'
 			}
 		}
 
