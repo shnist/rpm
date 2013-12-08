@@ -1,5 +1,5 @@
 angular.module('RPM.services')
-	
+
 	.service('CaptureService', ['$http', function ($http) {
 
 
@@ -26,7 +26,11 @@ angular.module('RPM.services')
 			});
 		};
 
-
+		this.changeCamera = function (cameraId) {
+			return $http.post(url + '/camera', cameraId).then(function (res) {
+				return res;
+			});
+		}
 
 		this.getImage = function () {
 			return $http.get(url + '/identify', { cache: false }).then(function (res) {
@@ -38,7 +42,10 @@ angular.module('RPM.services')
 
 
 		this.tag = function (params) {
-			return $http.post(url + '/update', params).then(function (res) {
+
+			var path = url + '/update?id=' + params.id + '&artist=' + params.artist + '&albumName=' + params.album;
+
+			return $http.post(path).then(function (res) {
 				return res;
 			});
 		};

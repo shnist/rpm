@@ -19,20 +19,23 @@ angular.module('RPM.controllers')
 			return CaptureService.getImage();
 		};
 
+		$scope.changeCamera = function () {
+			return CaptureService.changeCamera(1);
+		}
 
-		$scope.tagImage = function (tag) {
+		$scope.tagImage = function () {
 
-			var temp;
-			var data;
+			console.log('tag image', this);
 
-			// if (tag.album) temp = tag.album;
-			// if (tag.playlist) temp = tag.playlist;
+			var data = {};
 
 			data.id = $scope.states.image;
-			data.artist = tag.album.artist;
-			data.album = tag.album.name;
+			data.artist = this.album.artist;
+			data.album = this.album.name;
 
-			CaptureService.tag(data);
+			CaptureService.tag(data).then(function (res) {
+				console.log('tagging response', res);
+			});
 
 		};
 
