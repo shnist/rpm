@@ -2,7 +2,8 @@ var SpotifyPlayer = require('spotify-web');
 var SpotifyCredentials = require('./spotify_login');
 var pubsub = require('node-pubsub');
 var xml2js = require('xml2js');
-
+var lame = require('lame');
+var Speaker = require('speaker');
 
 var self;
 var SpotifyWrapper = {
@@ -11,6 +12,7 @@ var SpotifyWrapper = {
 	},
 	loginCallback: function () {},
 	searchCallback: function () {},
+	playCallback: function () {},
 
 	init: function () {
 		self = this;
@@ -102,6 +104,77 @@ var SpotifyWrapper = {
 		combinedAlbumsPlaylists.albums = albums;
 
 		this.searchCallback(combinedAlbumsPlaylists);
+	},
+	processPlayRequest: function (uri, callback) {
+		this.playCallback = callback;
+
+		this.determineUriType(uri, this.play);
+	},
+	determineUriType: function (uri, callback) {
+		var type = SpotifyPlayer.uriType(uri);
+		if (type !== 'album' && type !== 'playlist') {
+			this.playCallback({
+				'status': 'error',
+				'error': {
+					'message': 'Unrecognised uri type. Was not album or playlist'
+				}
+			});
+		} else {
+			if (type === 'album') {
+				this.playAlbum(uri);
+			} else {
+				this.playPlaylist(uri);
+			}
+		}
+	},
+	playAlbum: function (uri) {
+		this.context.get('spotify:album:7u6zL7kqpgLPISZYXNTgYk', function (error, album) {
+			if (error) {
+				throw error;
+			}
+			// first get the Track instances for each disc
+			var tracks = [];
+			album.disc.forEach(function (disc) {
+
+			if (!Array.isArray(disc.track)) return;
+				tracks.push.apply(tracks, disc.track);
+			});
+
+			function next () {
+				var track = tracks.shift();
+				if (!track) return spotify.disconnect();
+
+				track.get(function (err) {
+					if (err) throw err;
+
+					self.playCallback({
+						artist: track.artist[0].name,
+						track: track.name
+					});
+
+					console.log('Playing: %s - %s', track.artist[0].name, track.name);
+
+					track.play().on('error', function (err) {
+						console.error(err.stack || err);
+						next();
+					})
+					.pipe(new lame.Decoder())
+					.pipe(new Speaker())
+					.on('finish', next);
+				});
+			}
+
+			next();
+		});
+	},
+	playPlaylist: function (uri) {
+		this.context.get(uri, function (error, playlist) {
+			if (error) {
+				throw error;
+			}
+
+			console.log(playlist);
+		});
 	}
 };
 

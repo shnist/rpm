@@ -65,7 +65,10 @@ exports.search = function (request, response) {
 		if (request.query.q === '' || request.query.q === undefined) {
 			response.status = 200;
 			response.send({
-				error: 'Request parameter cannot be empty or undefined'
+				status: 'error',
+				error: {
+					message: 'Request parameter cannot be empty or undefined'
+				}
 			});
 		}
 
@@ -81,6 +84,37 @@ exports.search = function (request, response) {
 					}
 				}
 			});
+		});
+
+	} else {
+		response.status = 200;
+		response.send({
+			status: 'error',
+			error: {
+				message: 'Not logged in'
+			}
+		});
+	}
+};
+
+exports.play = function (request, response) {
+	if (spotify.isLoggedIn()) {
+		if (request.query.uri === '' || request.query.uri === undefined) {
+			response.status = 200;
+			response.send({
+				error: 'Album or playlist uri cannot be empty or undefined'
+			});
+		}
+
+		spotify.processPlayRequest(request.query.uri, function (message) {
+			response.status = 200;
+			if (message.status === 'error') {
+				response.send(message);
+			} else {
+				response.send({
+					status: 'playing!'
+				});
+			}
 		});
 
 	} else {

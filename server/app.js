@@ -7,15 +7,9 @@ var express = require('express'),
     appPath = __dirname + '/../app',
     server;
 
-//var spotify = require('./routes/spotify');
-//var noduino = require('./routes/noduino');
+var spotify = require('./routes/spotify');
+var noduino = require('./routes/noduino');
 
-/*
-    login = require('routes/login'),
-    search = require('routes/search'),
-    tag = require('routes/tag'),
-    play = require('routes/play');
-*/
 app.configure(function() {
     app.use(express.favicon());
     app.use(express.logger('dev'));
@@ -34,15 +28,11 @@ app.configure('development', function () {
     app.use(express.errorHandler());
 });
 
-// app.get('/api/spotify', spotify.checkLogIn);
-// app.post('/login', spotify.login);
-// app.get('/search', spotify.search);
-// app.get('/noduino', noduino.index);
-
-/*app.post('/login', login.index);
-app.get('/search/:term', search.index);
-app.post('/tag', tag.index);
-app.get('/play', play.index);*/
+app.get('/api/spotify', spotify.checkLogIn);
+app.post('/login', spotify.login);
+app.get('/search', spotify.search);
+app.get('/noduino', noduino.index);
+app.get('/play', spotify.play);
 
 app.get('/home', function (req, res) {
     var state = req.query.state;
