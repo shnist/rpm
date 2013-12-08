@@ -8,13 +8,20 @@ angular.module('RPM.directives')
 			scope: '=',
 			link: function (scope, elem, attrs, ctrl) {
 
+				var changeCamera = function () {
+					scope.changeCamera().then(function (data) {
+						if(data.status === 'success') {
+							saveImage();
+						}
+					});
+				};
+
 				var createImage = function (data) {
 					elem.find('img')[0].src = data;
 				};
 
 
 				var saveImage = function () {
-
 					scope.saveImage().then(function (data) {
 
 						if (data.capture) {
@@ -34,7 +41,7 @@ angular.module('RPM.directives')
 					scope.getImage();
 				};
 
-				saveImage();
+				changeCamera();
 
 			}
 		};
