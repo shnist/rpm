@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script type="text/javascript" src="//use.typekit.net/rap7swj.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	var height = $(document).height();
+	var width = $(document).width();
+	var header = $('.header').height();
+	var calcFullScreen = height-header - 500;
+
+	$('.fullscreen').css({"height": calcFullScreen, "width": width});
+
+	var highestBox = 0;
+        $('li', this).each(function(){
+
+            if($(this).height() > highestBox) 
+               highestBox = $(this).height(); 
+        });  
+
+        $('li',this).height(highestBox);
+
+        $('.go').click(function(){
+        	$('html, body').animate({
+        scrollTop: $("#scroll").offset().top
+    }, 1000);
+        
+        });
+  
+
+});
+</script> 
+</head>
+<body>
+<div class="header">
+			<a href="/" class="rpmLogo">RPM</a>
+			<div class="login">
+				<p>
+					Welcome, Ricky Burgess
+				</p>
+				<p><a href="/">Log out</a></p>
+			</div>
+			<br class="clear"/>
+		</div>
+
+<section class="landing">
+	
+	<div class="fullscreen">
+		<h1>Its time to make your music tangible again</h1>
+
+		<p>First things first. <br/>
+			make sure you've connected RPM to your device via USB.</p>
+
+		<div class="go"><a onmousedown="sup1.play(); return false;"><img src="assets/img/scroll_cta.gif"/></a></div>
+			
+	</div>
+	<ul class="info" id="scroll">
+		<li>
+			<div class="title"><img src="assets/img/1_icon.svg"/></div>
+			<h2>capture</h2>
+			<p>Place your artwork in front of the RPM camera, switch to ‘Capture’ and press the button.</p>
+			<span class="animation">
+	<img id="example2" src="assets/img/capture.gif"/>
+
+			</span>	
+		</li>
+		<li>
+			<div class="title"><img src="assets/img/2_icon.svg"/></div>
+			<h2>tag</h2>
+		<p>Search for your desired album or playlist 
+to begin tagging your artwork.</p>
+<span class="animation">
+				<img id="example2" src="assets/img/tag.gif"/>
+		
+			</span>	
+		</li>
+		<li>
+			<div class="title"><img src="assets/img/3_icon.svg"/></div>
+			<h2>play</h2>
+			<p>Simply flick the switch onto ‘play’ and press the button to start your album or playlist.</p>
+			<span class="animation">
+					<img id="example3" src="assets/img/play.gif"/>
+			</span>	
+		</li>	
+	</ul>	
+
+</section>	
+<footer class="landing">
+			<p>
+				Created by <a href="http://www.digitaslbi.com/global/">DigitasLBi Labs</a> 2013
+			</p>
+		</footer>
+	
+</body>
+</html>

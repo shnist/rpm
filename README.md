@@ -5,25 +5,14 @@ Physicalising music
 ## Set Up
 
 ### NPM
-The following packages need to be installed globaller. You may need to be sudo in order to do this.
+The following packages need to be installed globally. You may need to be sudo in order to do this.
 
 `npm install -g node-gyp`
 
 To install local dependencies simply run `npm install` in the root of the project.
 
-### Lib spotify
-If you use `brew` then you can install lib-spotify pretty easily using:
-
-`brew install libspotify`
-
-### Compiling the lib-spotify library
-* Clone the library onto your machine
-`git clone https://github.com/FrontierPsychiatrist/node-spotify.git lib-spotify`
-* CD into the root of the project
-* Run `node-gyp configure && node-gyp build`
-* This will compile the library to use as a node module. This is located in `/build/Release/`
-* Copy the contents of this folder into a folder called `lib_spotify` into the spotify folder of the project
-
+### Noduino
+To run rpmDuino you need to cd in the /noduino folder and run `node srv.web.js`
 
 ## Image Matcher
 ImageMatcher is a Spring Boot Java application that provides a RESTful interface to a connected camera and image matching algorithms.
@@ -125,9 +114,60 @@ with multiple camera*. This will need to be done each time the application is st
 In order to be able to use the spotify part of the application you need to create `spotify_login.js` file
 with an object that contains your spotify user name and password. An example is given below:
 
-	exports.user = {
-		name: 'your username',
-		password: 'your password'
+	module.exports = {
+		username: "username",
+		password: "password"
 	};
 
 The file needs to reside in the same place as the Spotify code.
+
+### Spotify Web
+We have settled on the following spotify api - https://github.com/TooTallNate/node-spotify-web.git
+It implements the "Spotify Web" WebSocket protocol that is used on Spotify's Web UI.
+
+The module has been added as dependency to the package.json, so simply run `npm install` to include it.
+
+You DON'T need an API key for this anymore. Speak to Aaron for credential details.
+
+## Noduino service
+### Events
+The arduino provides to forms of functionality, a toggle switch (to dictate whether the device is on play or record) and a button to trigger the action.
+
+#### Toggle Switch
+
+In the rpmDuino file events are set for both, firstly the toogle switch - set on pin 10 of the arduino - listens for a change event, if the change event is fired a global variable of toggleSwitch is updated.
+
+		board.withButton({pin: 10}, function(err, Button) {
+            Button.on('change', function(B) {
+
+                if(B.pushed === true){
+                  toggleSwitch = false;
+                }else{
+                  toggleSwitch = true;
+                }
+            });
+          });
+
+From the B event we can grab the pushed state, if this is set to true we assume a play state if false a record state.
+
+#### Button
+
+For the button we listen to the Push event
+
+		board.withButton({pin: 6}, function(err, Button) {
+        	Button.on('push', function(B) {
+	            switch(toggleSwitch){
+	              case true :
+	                console.log('pin 6 & start playing', i++);
+	              break;
+	              case false :
+	                console.log('pin 6 & start recording', i++);
+	              break
+	            }
+
+        	});
+    	});
+
+if the event is fired and the var of toggleSwitch is true we know to call the play part of the api, otherwise we start the record route.
+
+As default we assume False on toggleSwitch since we assume no record has been trained.

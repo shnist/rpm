@@ -1,0 +1,20 @@
+<div class="logInView">
+	<h1>Log In</h1>
+	<p>
+		Log in with your Spotify account details.
+	</p>
+	<form name="loginForm" ng-submit="login(loginForm)">
+
+		<label for="username">Username</label>
+		<input type="text" id="username" name="username" placeholder="Your user name..." ng-model="auth.username" required>
+
+		<label for="username">Password</label>
+		<input type="password" id="password" name="password" placeholder="Your password..." ng-model="auth.password" required>
+
+		<p class="error">Your username or password appears to be incorrect</p>
+
+		<a href="https://www.spotify.com/uk/password-reset/">Forgotten your password?</a>
+		
+		<input type="submit" name="submit" value="Log in">
+	</form>
+</div>

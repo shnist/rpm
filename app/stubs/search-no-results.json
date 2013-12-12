@@ -1,0 +1,10 @@
+{
+	"spotify": {
+		"query": "radiohead",
+		"image": "1",
+		"results": {
+			"playlists": [],
+			"albums": []
+		}
+	}
+}

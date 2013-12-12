@@ -1,0 +1,25 @@
+{
+	"spotify": {
+		"query": "radiohead",
+		"image": "1",
+		"results": {
+			"playlists": [
+				{
+					"name": "Maribou State",
+					"uri": "spotify:user:bobbyparkhurst:playlist:4QPCwhTzv9jqIC82sqOQu4"
+				},
+				{
+					"name": "My favourites",
+					"uri": "spotify:user:bobbyparkhurst:playlist:4QPCwhTzv9jqIC82sqOQu4"
+				}
+			],
+			"albums": [
+				{
+					"name": "The Bends",
+					"artist": "Radiohead",
+					"uri": "spotify:user:bobbyparkhurst:playlist:4QPCwhTzv9jqIC82sqOQu4"
+				}
+			]
+		}
+	}
+}

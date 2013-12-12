@@ -1,0 +1,96 @@
+body {
+	background: $brandYellow;
+}
+
+.landing {
+	background: $darkGrey;
+	border-top:1px solid $lightGrey;
+
+	p, a , h2{
+		color:$white;
+	}
+	li:nth-child(1) {
+		background:$black;
+	}
+	li:nth-child(2) {
+		background:$darkerGrey;
+	}
+	li:nth-child(3) {
+		background:$brandYellow;
+		p {
+			color:$darkGrey;
+		}
+	}
+	h1 {
+		color:$white;
+	}
+}
+
+.header {
+	background: $darkGrey;
+	color: $white;
+
+	a {
+		color: $white;
+	}
+}
+
+footer {
+	a, p {
+		color:$darkGrey;
+	}
+}
+
+section {
+
+	h1, h2, p, p a, label{
+		color:$darkGrey;
+	}
+
+	p.error {
+		background-color:$errorRed;
+		color:$white;
+	}
+
+	input.error {
+		border:1px solid $errorRed;
+	}
+
+
+	.logInView input {
+		color:$lightGrey;
+	}
+
+	span.tag {
+		background-color:$darkGrey;
+		color:$white;
+	}
+
+	div.artwork {
+		border: 18px solid $white;
+	}
+
+	div.logInView {
+		input[type=submit] {
+				background:$white;
+				color:$darkGrey;
+		}
+		label {
+			background-color:$white;
+		}
+	}	
+
+	ul.results {
+		border-top: 1px solid $darkYellow;
+		li {
+			border-bottom: 1px solid $darkYellow;
+			a.tag {
+				background-color:$white;
+				&:hover {
+				background-color: $darkGrey;
+				color:$white;
+				}
+			}
+		}
+	}
+}

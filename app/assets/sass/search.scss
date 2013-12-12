@@ -1,0 +1,89 @@
+
+section {
+	padding:0 2rem 8.3rem 2rem;
+
+	h1 {
+		margin-top: 8.4rem;
+		padding:0;
+		text-transform: uppercase;
+
+		&.search {
+			padding-left:4rem;
+			background:url("../img/sucess_tick_01.svg") no-repeat left bottom;
+		}
+	}
+
+	h2 {
+		margin-top:4rem;
+		text-transform: uppercase;
+	}
+
+	ul.results {
+		margin-top: 2rem;
+		width:100%;
+		li {
+			padding: 2.5rem 0;
+			position:relative;
+
+			p{
+				margin:0;
+				padding:0!important;
+			}
+
+			.tag {
+				text-transform: uppercase;
+				text-decoration: none;
+				padding:1rem 3rem;
+				position: absolute;
+				right:0;
+				top:1.5rem;
+
+			}
+		}
+	}
+
+	form.search {
+		padding: 0.8rem 0 2.8 0;
+
+		label {
+			display:block;
+		}
+
+		input {
+			padding: 0.7rem;
+			width: 50rem;
+			display:block;
+			border:none;
+			float:left;
+			margin:0 0 2rem 0;
+			color:$darkGrey;
+			text-transform: uppercase;
+		}
+		input.button {
+			float:left;
+			margin:0 0 2rem 0;
+			height:8.6rem;
+			width:8.6rem;
+			border:none;
+			background: url("../img/search_field_icon_simplified.svg") no-repeat center $darkGrey;
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			&:hover {
+				cursor:pointer;
+			}
+		}
+	}
+
+	div.artwork {
+		clear:both;
+		display: inline-block;
+	}
+
+	p.cancel {
+		text-decoration: underline;
+		padding:2rem 0 8.4rem 0;
+	}
+
+}
+

@@ -1,0 +1,15 @@
+<section class="capture">
+
+	<div class="search" ng-show="states.results === null && !states.tagged">
+		<h1>Artwork captured</h1>
+
+		<search></search>
+
+		<camera></camera>
+	</div>
+
+	<results ng-show="states.results !== null && !states.tagged"></results>
+
+	<tagged ng-show="states.tagged"></tagged>
+
+</section>
