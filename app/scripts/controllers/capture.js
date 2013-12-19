@@ -25,7 +25,7 @@ angular.module('RPM.controllers')
 		};
 
 		$scope.changeCamera = function () {
-			return CaptureService.changeCamera(0);
+			return CaptureService.changeCamera(1);
 		};
 
 		$scope.tagImage = function () {

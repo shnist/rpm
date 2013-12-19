@@ -3,7 +3,7 @@ angular.module('RPM.services')
 
 
 		this.play = function (uri) {
-
+			console.log('SpotifyService');
 			var encoded = encodeURI('/play?uri=' + uri);
 
 			return $http.get(encoded).then(function (res) {

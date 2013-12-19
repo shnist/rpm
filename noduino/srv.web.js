@@ -14,5 +14,5 @@ requirejs.config({nodeRequire: require});
 requirejs(['./srv.app', './srv.socket'],function(app, io) {
   var kickstart = app.kickstart, 
     router = kickstart.listen();
-  console.log("Listening on http://%s:%d", kickstart.conf().name, router.address().port);
+  	console.log("Listening on http://%s:%d", kickstart.conf().name, router.address().port);
 });
