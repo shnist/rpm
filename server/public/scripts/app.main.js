@@ -1,7 +1,6 @@
-var p = 'scripts/vendor/';
-require(["jquery", p + "dropdown.js", p + "prettify.js", "./scripts/examples.js"], function($, dd, pf, examples) {
+require(["jquery", "./scripts/examples.js"], function($, examples) {
   $(document).ready(function(e) {
-    prettyPrint();
+
     console.log('examples', examples);
     examples.bind();
     
