@@ -1,8 +1,3 @@
-var io = require('socket.io'), 
-    Noduino = require('./libs/Noduino'),
-    Connector = require('./libs/Noduino.Serial'), 
-    Logger = require('./libs/Logger');
-
 /**
 * Define SocketHandler
 * @param object socket Socket.IO
@@ -28,7 +23,8 @@ SocketHandler.prototype.current = function() {
 * Connect Bindings
 */
 SocketHandler.prototype.bindings = function() {
-    var io = this.handler, that = this;
+    var io = this.handler,
+        that = this;
 
     io.sockets.on('connection', function(socket) {
         that.sockets[socket.id] = socket;
@@ -57,7 +53,7 @@ SocketHandler.prototype.bindings = function() {
                 var curPin = data.pin;
                 that.current().watchDigitalIn({'pin': data.pin}, function(m) {
                     if (!m.pin || m.pin == null || m.pin == NaN) {
-                        return; 
+                        return;
                     }
 
                     if (m.state != that.pinCache[m.pin] && curPin == m.pin) {
@@ -71,10 +67,10 @@ SocketHandler.prototype.bindings = function() {
 
         /**
         * Connect to Arduino
-        */      
+        */
         that.sockets[socket.id].on('board.connect', function(data) {
             if (that.current() && that.current().connected == true) {
-                return socket.emit('response', {'msg': 'board.connect', 'response': 'ready'}); 
+                return socket.emit('response', {'msg': 'board.connect', 'response': 'ready'});
             }
 
             that.arduinos[0] = new Noduino({'debug': true}, Connector, Logger);
@@ -89,4 +85,4 @@ SocketHandler.prototype.bindings = function() {
     });
 };
 
-exports.socket = SocketHandler(io, Noduino, Connector, Logger);
+module.exports = SocketHandler;
