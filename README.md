@@ -11,9 +11,6 @@ The following packages need to be installed globally. You may need to be sudo in
 
 To install local dependencies simply run `npm install` in the root of the project.
 
-### Noduino
-To run rpmDuino you need to cd in the /noduino folder and run `node srv.web.js`
-
 ## Image Matcher
 ImageMatcher is a Spring Boot Java application that provides a RESTful interface to a connected camera and image matching algorithms.
 

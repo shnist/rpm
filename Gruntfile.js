@@ -81,6 +81,4 @@ module.exports = function (grunt) {
 	grunt.registerTask('default', ['build', 'server', 'open:dev', 'watch']);
 
 	grunt.registerTask('build', ['jshint', 'concat', 'sass']);
-
-	//grunt.registerTask('default', ['jshint', 'concat', 'sass']);
 };
