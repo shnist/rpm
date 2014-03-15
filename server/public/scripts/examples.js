@@ -14,7 +14,7 @@ define(function() {
       $('#e3-exampleConnection .alert').addClass('hide');    
       $('#e3-exampleConnection .alert-info').removeClass('hide');
       $('#e3-exampleConnection .alert-info').html('Trying to connect to your Arduino…');      
-      require(['rpmDuino'], function(example) {
+      require(['rpm_duino'], function(example) {
         example.handle();
       });      
     });
