@@ -1,12 +1,27 @@
+var spotify = require('node-spotify')({
+		appkeyFile: 'spotify_appkey.key'
+	}),
+	Q = require('q'),
+	deferred = Q.defer();
+
 var spotifyInterface = {
-
-
-	login: function () {
+	login: function (credentials) {
+		spotify.login(credentials.username, credentials.password, false, false);
 		
+		spotify.ready(function () {
+			deferred.resolve({
+				status: 200
+			});
+		});
+	},
+
+	search: function () {
+
+	},
+
+	play: function () {
+
 	}
-
-
-
 };
 
 module.exports = spotifyInterface;
@@ -18,17 +33,7 @@ module.exports = spotifyInterface;
 
 
 
-var spotifyOptions = {
-	appkeyFile: 'spotify_appkey.key'
-};
 
-var spotify = require('node-spotify')(spotifyOptions);
-
-spotify.login('aaron.jack.faber@gmail.com', '23Arsakia1089', false, false);
-
-spotify.ready(function () {
-	searchSpotify();
-});
 
 
 function searchSpotify () {
