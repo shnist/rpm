@@ -2,10 +2,13 @@
 
 var express = require('express'),
     http = require('http'),
+    io = require('socket.io'),
     app = module.exports = express(),
     port = 3010,
     appPath = __dirname + '/../app',
     server;
+
+//require('./controllers/noduino_sockets')(io);
 
 var spotify = require('./routes/spotify');
 var noduino = require('./routes/noduino');
@@ -28,11 +31,13 @@ app.configure('development', function () {
     app.use(express.errorHandler());
 });
 
+
 app.get('/api/spotify', spotify.checkLogIn);
 app.post('/login', spotify.login);
 app.get('/search', spotify.search);
 app.get('/noduino', noduino.index);
 app.get('/play', spotify.play);
+app.get('/connect', noduino.connect);
 
 app.get('/home', function (req, res) {
     var state = req.query.state;

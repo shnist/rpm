@@ -46,11 +46,15 @@ angular.module('RPM', imports)
 		});
 
 
-		$routeProvider.when('/', {
+		$routeProvider.when('/login', {
 			templateUrl: 'scripts/templates/user/user.html',
 			controller: 'User'
 		});
 
+		$routeProvider.when('/', {
+			templateUrl: 'scripts/templates/noduino/noduino.html',
+			controller: 'Noduino'
+		});
 
 		$routeProvider.otherwise({
 			redirectTo: '/'
