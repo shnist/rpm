@@ -2,10 +2,10 @@
 	"folders":
 	[
 		{
-			"path": "/home/aaron/Sites/rpm"
+			"path": "./"
 		},
 		{
-			"path":	"/Users/fabera/Sites/rpm",
+			"path":	"./",
 			"folder_exclude_patterns": [".sass-cache", "node_modules"]
 		}
 	]
