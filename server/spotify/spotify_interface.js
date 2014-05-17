@@ -1,3 +1,23 @@
+var spotifyInterface = {
+
+
+	login: function () {
+		
+	}
+
+
+
+};
+
+module.exports = spotifyInterface;
+
+
+
+
+
+
+
+
 var spotifyOptions = {
 	appkeyFile: 'spotify_appkey.key'
 };
