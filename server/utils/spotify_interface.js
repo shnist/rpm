@@ -32,34 +32,46 @@ module.exports = {
 	getPlaylistById: function (id, callback) {
 		var playlistContainer = spotify.playlistContainer,
 			playlists = playlistContainer.getPlaylists(),
-			matchingPlaylist = playlists.filter(function (element) {
-				var playlistId;
+			i, len;
 
-				if (!element.hasOwnProperty('link')) {
-					return false;
-				} 
+		for (i = 0, len = playlists.length; i < len; i++) {
+			if (!!playlists[i].hasOwnProperty('link')) {
+				if (id === playlists[i].link.split(':')[4]) {
+					callback(null, playlists[i]);
+				}				
+			}
+		}
 
-				playlistId = element.link.split(':')[4];
-
-				return playlistId === id;
-			});
-
-		callback(null, matchingPlaylist);
 	},
 
 	getTracks: function (playlistId, callback) {
+		var tracks = this._getTracks(playlistId);
+
+		callback(null, tracks);
+	},
+
+	getTrackById: function (playlistId, trackId, callback) {
+		var tracks = this._getTracks(playlistId),
+			i, len;
+
+		for (i = 0, len = tracks.length; i < len; i++) {
+			if (trackId === tracks[i].link.split(':')[2]) {
+				callback(null, tracks[i]);
+			}
+		}
+	},
+
+	_getTracks: function (playlistId) {
 		var playlistContainer = spotify.playlistContainer,
 			playlists = playlistContainer.getPlaylists(),
-			i, index, playlist, tracks;
+			i, len, playlist;
 
 		for (i = 0, len = playlists.length; i < len; i++) {
 			if (!!playlists[i].hasOwnProperty('link')) {
 				if (playlistId === playlists[i].link.split(':')[4]) {
-					tracks = playlists[i].getTracks();
+					return playlists[i].getTracks();
 				}
 			}
-		}
-
-		callback(null, tracks);
+		}		
 	}
 };
