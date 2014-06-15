@@ -1,7 +1,9 @@
 'use strict';
 
 var Hapi = require('hapi'),
-    server = new Hapi.Server('localhost', 9000);
+    server = new Hapi.Server('localhost', 9000),
+    spotify = require('./utils/spotify_interface');
+
 
 server.start(function () {
     console.log('Started server at ' + server.info.host + ':' + server.info.port);
@@ -11,7 +13,18 @@ server.route({
     method: 'post',
     path: '/v1/login',
     handler: function (request, reply) {
-        reply('login');
+        var credentials = {
+            username: request.query.username || request.payload.username,
+            password: request.query.password || request.payload.password
+        };
+
+        spotify.login(credentials, function (error) {
+            if (error) {
+                reply(Hapi.error.internal(err));
+            } else {
+                reply('success');
+            }
+        });
     }
 });
 
@@ -25,10 +38,25 @@ server.route({
 
 server.route({
     method: 'get',
+    path: '/v1/tracks',
+    handler: function (request, reply) {
+        reply('tracks');
+    }
+});
+
+server.route({
+    method: 'get',
     path: '/v1/tracks/{id}',
     handler: function (request, reply) {
-        console.log(request.params.id);
-        reply('tracks');
+        reply('track:' + request.params.id);
+    }
+});
+
+server.route({
+    method: 'get',
+    path: '/v1/playlists',
+    handler: function (request, reply) {
+        reply('playlists');
     }
 });
 
@@ -36,8 +64,15 @@ server.route({
     method: 'get',
     path: '/v1/playlists/{id}',
     handler: function (request, reply) {
-        console.log(request.params.id);
-        reply('playlists');
+        reply('playlists:' + request.params.id);
+    }
+});
+
+server.route({
+    method: 'get',
+    path: '/v1/albums',
+    handler: function (request, reply) {
+        reply('albums');
     }
 });
 
@@ -45,7 +80,6 @@ server.route({
     method: 'get',
     path: '/v1/albums/{id}',
     handler: function (request, reply) {
-        console.log(request.params.id);
-        reply('albums');
+        reply('albums:' + request.params.id);
     }
 });

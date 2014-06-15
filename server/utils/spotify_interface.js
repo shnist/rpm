@@ -1,18 +1,14 @@
 var spotify = require('node-spotify')({
-		appkeyFile: 'spotify_appkey.key'
-	}),
-	Q = require('q'),
-	deferred = Q.defer();
+	appkeyFile: './server/utils/spotify_appkey.key'
+});
 
-var spotifyInterface = {
-	login: function (credentials) {
-		spotify.login(credentials.username, credentials.password, false, false);
-		
-		spotify.ready(function () {
-			deferred.resolve({
-				status: 200
-			});
+module.exports = {
+	login: function (credentials, callback) {
+		spotify.ready(function (error) {
+			callback(error);
 		});
+
+		spotify.login(credentials.username, credentials.password, true, false);
 	},
 
 	search: function () {
@@ -23,8 +19,6 @@ var spotifyInterface = {
 
 	}
 };
-
-module.exports = spotifyInterface;
 
 
 
