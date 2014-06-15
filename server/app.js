@@ -124,7 +124,7 @@ server.route({
 });
 
 server.route({
-    method: 'put',
+    method: 'get',
     path: '/v1/player/stop',
     handler: function (request, reply) {
         spotify.stopPlayer(function (error) {
