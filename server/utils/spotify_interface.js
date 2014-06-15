@@ -30,16 +30,6 @@ module.exports = {
 	},
 
 	getPlaylistById: function (id, callback) {
-		var matchingPlaylist = this._getPlaylistById(id);
-
-		callback(null, matchingPlaylist);
-	},
-
-	getTracks: function (playlist, callback) {
-		var matchingPlaylist = this._getPlaylistById(id);
-	},
-
-	_getPlaylistById: function (id) {
 		var playlistContainer = spotify.playlistContainer,
 			playlists = playlistContainer.getPlaylists(),
 			matchingPlaylist = playlists.filter(function (element) {
@@ -54,7 +44,22 @@ module.exports = {
 				return playlistId === id;
 			});
 
+		callback(null, matchingPlaylist);
+	},
 
-		return matchingPlaylist;
+	getTracks: function (playlistId, callback) {
+		var playlistContainer = spotify.playlistContainer,
+			playlists = playlistContainer.getPlaylists(),
+			i, index, playlist, tracks;
+
+		for (i = 0, len = playlists.length; i < len; i++) {
+			if (!!playlists[i].hasOwnProperty('link')) {
+				if (playlistId === playlists[i].link.split(':')[4]) {
+					tracks = playlists[i].getTracks();
+				}
+			}
+		}
+
+		callback(null, tracks);
 	}
 };
