@@ -17,5 +17,12 @@ module.exports = {
 		search.execute(function (error, searchResult) {
 			callback(error, searchResult);
 		});
+	},
+
+	getPlaylists: function (callback) {
+		var playlistContainer = spotify.playlistContainer,
+			playlists = playlistContainer.getPlaylists();
+
+		callback(null, playlists);
 	}
 };

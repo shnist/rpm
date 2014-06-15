@@ -33,7 +33,7 @@ server.route({
     path: '/v1/search',
     handler: function (request, reply) {
         var query = request.query.q || request.payload.q;
- 
+
         spotify.search(query, function (error, result) {
             if (error) {
                 reply(error);
@@ -46,25 +46,15 @@ server.route({
 
 server.route({
     method: 'get',
-    path: '/v1/tracks',
-    handler: function (request, reply) {
-        reply('tracks');
-    }
-});
-
-server.route({
-    method: 'get',
-    path: '/v1/tracks/{id}',
-    handler: function (request, reply) {
-        reply('track:' + request.params.id);
-    }
-});
-
-server.route({
-    method: 'get',
     path: '/v1/playlists',
     handler: function (request, reply) {
-        reply('playlists');
+        spotify.getPlaylists(function (error, playlists) {
+            if (error) {
+                reply(error);
+            } else {
+                reply(playlists);
+            }
+        });
     }
 });
 
@@ -89,5 +79,13 @@ server.route({
     path: '/v1/albums/{id}',
     handler: function (request, reply) {
         reply('albums:' + request.params.id);
+    }
+});
+
+server.route({
+    method: 'get',
+    path: '/v1/tracks/{id}',
+    handler: function (request, reply) {
+        reply('track:' + request.params.id);
     }
 });
