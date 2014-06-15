@@ -27,5 +27,23 @@ module.exports = {
 			});
 
 		callback(null, retrievablePlaylists);
+	},
+
+	getPlaylistById: function (id, callback) {
+		var playlistContainer = spotify.playlistContainer,
+			playlists = playlistContainer.getPlaylists(),
+			matchingPlaylist = playlists.filter(function (element) {
+				var playlistId;
+
+				if (!element.hasOwnProperty('link')) {
+					return false;
+				} 
+
+				playlistId = element.link.split(':')[4];
+
+				return playlistId === id;
+			});
+
+		callback(null, matchingPlaylist);
 	}
 };
