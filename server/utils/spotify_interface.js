@@ -70,6 +70,12 @@ module.exports = {
 		callback(null, playlist);
 	},
 
+	stopPlayer: function (callback) {
+		spotify.player.stop();
+
+		callback(null);
+	},
+
 	_playTrack: function (track) {
 		spotify.player.play(track);
 	},

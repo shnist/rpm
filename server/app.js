@@ -113,11 +113,25 @@ server.route({
     handler: function (request, reply) {
         var playlistId = request.params.id;
 
-        spotify.playPlaylist(playlistId, function (error, track) {
+        spotify.playPlaylist(playlistId, function (error, playlist) {
             if (error) {
                 reply(error);
             } else {
-                reply(track);
+                reply(playlist);
+            }
+        });
+    }
+});
+
+server.route({
+    method: 'put',
+    path: '/v1/player/stop',
+    handler: function (request, reply) {
+        spotify.stopPlayer(function (error) {
+            if (error) {
+                reply(error);
+            } else {
+                reply('success');
             }
         });
     }
