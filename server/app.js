@@ -63,7 +63,7 @@ server.route({
     path: '/v1/playlists/{id}',
     handler: function (request, reply) {
         var id = request.params.id;
-        
+
         spotify.getPlaylistById(id, function (error, playlist) {
             if (error) {
                 reply(error);
@@ -76,24 +76,16 @@ server.route({
 
 server.route({
     method: 'get',
-    path: '/v1/albums',
-    handler: function (request, reply) {
-        reply('albums');
-    }
-});
-
-server.route({
-    method: 'get',
-    path: '/v1/albums/{id}',
-    handler: function (request, reply) {
-        reply('albums:' + request.params.id);
-    }
-});
-
-server.route({
-    method: 'get',
-    path: '/v1/tracks/{id}',
+    path: '/v1/{playlistId}/tracks',
     handler: function (request, reply) {
         reply('track:' + request.params.id);
+    }
+});
+
+server.route({
+    method: 'get',
+    path: '/v1/{playlistId}/tracks/{id}',
+    handler: function (request, reply) {
+        reply('tracks');
     }
 });
