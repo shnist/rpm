@@ -11,37 +11,11 @@ module.exports = {
 		spotify.login(credentials.username, credentials.password, true, false);
 	},
 
-	search: function () {
+	search: function (query, callback) {
+		var search = new spotify.Search(query);
 
-	},
-
-	play: function () {
-
+		search.execute(function (error, searchResult) {
+			callback(error, searchResult);
+		});
 	}
 };
-
-
-
-
-
-
-
-
-
-
-
-function searchSpotify () {
-	var search = new spotify.Search('Lady Gaga – A Very Gaga Holiday');
-	search.execute(function (error, searchResult) {
-	    //console.log(searchResult);
-	    var playlistResult = searchResult.playlists[0];
-	    var track = playlistResult.getTracks()[0];
-
-	    spotify.player.play(track);
-	    spotify.player.seek(track.duration - 4);
-
-	    spotify.player.on('player_end_of_track', function (error, player) {
-	    	
-	    });
-	});
-}

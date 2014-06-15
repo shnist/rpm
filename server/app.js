@@ -20,7 +20,7 @@ server.route({
 
         spotify.login(credentials, function (error) {
             if (error) {
-                reply(Hapi.error.internal(err));
+                reply(error);
             } else {
                 reply('success');
             }
@@ -32,7 +32,15 @@ server.route({
     method: 'get',
     path: '/v1/search',
     handler: function (request, reply) {
-        reply('search');
+        var query = request.query.q || request.payload.q;
+ 
+        spotify.search(query, function (error, result) {
+            if (error) {
+                reply(error);
+            } else {
+                reply(result);
+            }
+        });
     }
 });
 
