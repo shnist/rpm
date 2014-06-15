@@ -94,6 +94,15 @@ server.route({
     method: 'get',
     path: '/v1/playlists/{playlistId}/tracks/{id}',
     handler: function (request, reply) {
-        reply('tracks');
+        var playlistId = request.params.playlistId,
+            trackId = request.params.id;
+
+        spotify.getTrackById(playlistId, trackId, function (error, track) {
+            if (error) {
+                reply(error);
+            } else {
+                reply(track);
+            }
+        });
     }
 });
