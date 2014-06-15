@@ -88,6 +88,11 @@ module.exports = {
 		callback(null);
 	},
 
+	isLoggedIn: function () {
+		console.log(spotify.userSession);
+		return !!spotify.userSession;
+	},
+
 	_playTrack: function (track) {
 		spotify.player.play(track);
 	},

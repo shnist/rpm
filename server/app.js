@@ -4,7 +4,6 @@ var Hapi = require('hapi'),
     server = new Hapi.Server('localhost', 9000),
     spotify = require('./utils/spotify_interface');
 
-
 server.start(function () {
     console.log('Started server at ' + server.info.host + ':' + server.info.port);
 });
@@ -155,12 +154,16 @@ server.route({
     method: 'get',
     path: '/v1/player/resume',
     handler: function (request, reply) {
-        spotify.resumePlayer(function (error) {
-            if (error) {
-                reply(error);
-            } else {
-                reply('success');
-            }
-        });
+        if (spotify.isLoggedIn()) {
+            spotify.resumePlayer(function (error) {
+                if (error) {
+                    reply(error);
+                } else {
+                    reply('success');
+                }
+            });
+        } else {
+            reply(Hapi.error.unauthorized('User not logged in'));
+        }
     }
 });
