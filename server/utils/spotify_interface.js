@@ -76,6 +76,18 @@ module.exports = {
 		callback(null);
 	},
 
+	pausePlayer: function (callback) {
+		spotify.player.pause();
+
+		callback(null);
+	},
+
+	resumePlayer: function (callback) {
+		spotify.player.resume();
+
+		callback(null);
+	},
+
 	_playTrack: function (track) {
 		spotify.player.play(track);
 	},

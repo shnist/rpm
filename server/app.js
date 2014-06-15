@@ -136,3 +136,31 @@ server.route({
         });
     }
 });
+
+server.route({
+    method: 'get',
+    path: '/v1/player/pause',
+    handler: function (request, reply) {
+        spotify.pausePlayer(function (error) {
+            if (error) {
+                reply(error);
+            } else {
+                reply('success');
+            }
+        });
+    }
+});
+
+server.route({
+    method: 'get',
+    path: '/v1/player/resume',
+    handler: function (request, reply) {
+        spotify.resumePlayer(function (error) {
+            if (error) {
+                reply(error);
+            } else {
+                reply('success');
+            }
+        });
+    }
+});
