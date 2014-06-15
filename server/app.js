@@ -76,10 +76,10 @@ server.route({
 
 server.route({
     method: 'get',
-    path: '/v1/{playlistId}/tracks',
+    path: '/v1/playlists/{playlistId}/tracks',
     handler: function (request, reply) {
         var playlistId = request.params.playlistId;
-        
+
         spotify.getTracks(playlistId, function (error, tracks) {
             if (error) {
                 reply(error);
@@ -92,7 +92,7 @@ server.route({
 
 server.route({
     method: 'get',
-    path: '/v1/{playlistId}/tracks/{id}',
+    path: '/v1/playlists/{playlistId}/tracks/{id}',
     handler: function (request, reply) {
         reply('tracks');
     }
