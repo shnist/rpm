@@ -21,8 +21,11 @@ module.exports = {
 
 	getPlaylists: function (callback) {
 		var playlistContainer = spotify.playlistContainer,
-			playlists = playlistContainer.getPlaylists();
+			playlists = playlistContainer.getPlaylists(),
+			retrievablePlaylists = playlists.filter(function (element) {
+				return element.hasOwnProperty('link');
+			});
 
-		callback(null, playlists);
+		callback(null, retrievablePlaylists);
 	}
 };
