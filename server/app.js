@@ -106,3 +106,19 @@ server.route({
         });
     }
 });
+
+server.route({
+    method: 'put',
+    path: '/v1/playlists/{id}/play',
+    handler: function (request, reply) {
+        var playlistId = request.params.id;
+
+        spotify.playPlaylist(playlistId, function (error, track) {
+            if (error) {
+                reply(error);
+            } else {
+                reply(track);
+            }
+        });
+    }
+});
