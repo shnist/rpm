@@ -30,6 +30,16 @@ module.exports = {
 	},
 
 	getPlaylistById: function (id, callback) {
+		var matchingPlaylist = this._getPlaylistById(id);
+
+		callback(null, matchingPlaylist);
+	},
+
+	getTracks: function (playlist, callback) {
+		var matchingPlaylist = this._getPlaylistById(id);
+	},
+
+	_getPlaylistById: function (id) {
 		var playlistContainer = spotify.playlistContainer,
 			playlists = playlistContainer.getPlaylists(),
 			matchingPlaylist = playlists.filter(function (element) {
@@ -44,6 +54,7 @@ module.exports = {
 				return playlistId === id;
 			});
 
-		callback(null, matchingPlaylist);
+
+		return matchingPlaylist;
 	}
 };
